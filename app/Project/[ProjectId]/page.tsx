@@ -4,6 +4,12 @@ import Project_blog from "./Project_blog";
 import Link from "next/link";
 import Footer from "@/app/(Footer)/Footer";
 import { Project } from "../../../utils/constants";
+
+export function generateStaticParams() {
+  return Project.filter((p) => p.video_key).map((p) => ({
+    ProjectId: p.video_key,
+  }));
+}
 type Props = {
   params: {
     ProjectId: string;

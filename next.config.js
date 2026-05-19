@@ -1,13 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  basePath: "/galaxy-portfolio",
   images: {
-    domains: [
-      "res.cloudinary.com",
-      "lh3.googleusercontent.com",
-      "next-auth.js.org",
-      "avatars.githubusercontent.com",
-      "platform-lookaside.fbsbx.com",
-    ],
+    unoptimized: true,
   },
 };
 
