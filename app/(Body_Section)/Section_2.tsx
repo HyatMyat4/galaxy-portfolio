@@ -23,35 +23,34 @@ function Section_2() {
             id="Wecom-text"
             className=" text-[12px] 310:text-[14px] 370:text-auto"
           >
-            Joiner Full Stack Software Engineer
+            Senior Full-Stack Engineer at Innorder
           </div>
         </motion.div>
         <div className="  w-auto h-auto  animate-slideleftT2 mt-[24px] text-white  ">
           <span className=" text-[40px] 400:text-[50px]  800:text-[57px] font-bold align-top ">
-            Providing{" "}
+            Building{" "}
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              the best
+              scalable &
             </span>{" "}
           </span>
           <span className=" translate-y-[-20px]  animate-slideleftT2 text-[40px] 400:text-[50px]  800:text-[57px] font-bold   align-top ">
-            Project experience
+            impactful products
           </span>
         </div>
         <p className=" animate-slideleftT3 text-[16px] 400:text-[19px] text-slate-400 mb-[20px]  ">
-          All the best and most modern resources at your fingertips. Access
-          online
-          {/*--->a*/}
-          <a className="Home_a ">Website</a>,{/*--->a*/}
-          <a className="Home_a">Mobile</a>,{/*--->a*/}
-          <a className="Home_a">Software</a>, coding examples, tutorials and
-          much more. All in one place
+          Full-stack engineer with 4+ years of experience at Innorder. Focused
+          on{" "}
+          <a className="Home_a ">React</a>,
+          <a className="Home_a">Next.js</a>,
+          <a className="Home_a">NestJS</a>, clean architecture, and
+          production-ready code that creates real-world value.
         </p>
         <a
           href="#Section_4"
           id="button-primary"
           className=" animate-slideleftT4 px-[20px] py-[7px] text-white  cursor-pointer hover:scale-105 active:scale-90  transition-all   duration-150 select-none rounded-[5px]"
         >
-          Start learing Now!
+          Explore My Work
         </a>
       </div>
       <div className=" w-[50%] h-full hidden 1140:flex flex-row items-center  select-none justify-between ">

@@ -15,7 +15,7 @@ function Nav_Left() {
         id="cursive"
         className=" font-bold  text-gray-300  ml-[10px] hidden 310:flex "
       >
-        Hyat Myat
+        Htet Myat
       </span>
     </Link>
   );

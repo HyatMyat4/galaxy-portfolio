@@ -15,79 +15,76 @@ function page() {
         </Link>
       </div>
       <div className=" w-full 1250:w-[900px] h-auto m-auto mt-[25px] pb-[100px] ">
-        <div className=" text-gray-400 text-[14px]">Sat Mar 12 2022</div>
+        <div className=" text-gray-400 text-[14px]">Senior Full-Stack Engineer</div>
         <div className="w-full h-auto font-bold text-[29px] my-[15px] text-slate-200  animate-slowfade ">
           Hey ☘️, I&apos;m Htet Myat
         </div>
         <div className=" text-gray-300    animate-slideright ">
-          When I was Start age 19 I found Programming began when I first learned
-          to code with an html. As I explored the world of technology, I
-          discovered web development and was captivated by the creativity and
-          innovation involved in building online experiences.
+          I&apos;m a full-stack software engineer with over 4 years of professional
+          experience, deeply passionate about programming, open source, and building
+          impactful products with code. I consider software development not just a
+          profession, but a craft that I genuinely enjoy and continuously improve.
+        </div>
+        <div className=" text-gray-300  mt-[15px] animate-slideright ">
+          After joining Innorder, I&apos;ve grown into a senior engineering role, where
+          I contribute to designing, developing, and maintaining scalable systems
+          across multiple company projects. I also serve as the author and maintainer
+          of several core internal projects that help power the company&apos;s ecosystem.
         </div>
         <div>
           <div className="text-[20px]  my-[15px]  animate-slideright ">
-            <span className="monospace">All i learning selfstudy from</span>
-            <span className="text-rose-600"> youtube</span> ,
+            <span className="monospace">Self-taught from</span>
+            <span className="text-rose-600"> YouTube</span> ,
             <span className="text-emerald-500"> Google</span> ,
-            <span className=" text-[#F48024]"> Stackoverflow</span>
+            <span className=" text-[#F48024]"> Stack Overflow</span>
           </div>
-        </div>
-        <div className="text-gray-300  animate-slideright">
-          Fast-forward to today, and I have had the opportunity to work
-          alongside proficient back-end developers and full-stack developers on
-          the construction of real-world applications.
-        </div>
-        <div className=" text-gray-300  animate-slideright  ">
-          <span className="monospace ">In my free time, I learing</span>
-          <span className="text-sky-500"> Golang</span> ,
-          <span className="text-yellow-500"> Gin </span>
-          <span className="">
-            For My Dream Mutiplayer Game Server and Backend Developments
-          </span>
         </div>
         <div className="w-full h-auto font-bold text-[29px] mb-[15px] mt-[35px] text-slate-200 animate-slowfade  ">
           Development Experience ⏳
         </div>
         <div className="mt-4  animate-slideright    leading-[30px] monospace text-[16px] 800:text-[20px]">
-          I&apos;m a skilled web developer with experience in{" "}
+          I&apos;m a skilled full-stack engineer with experience in{" "}
           <span className=" text-blue-500 ">TypeScript</span> and{" "}
-          <span className=" text-yellow-500"> JavaScript</span>, and expertise
+          <span className=" text-yellow-500"> JavaScript</span>, and deep expertise
           in frameworks like <span className=" text-cyan-500">React</span>,{" "}
-          <span className="  text-teal-500"> Node.js</span>, and
-          <span className="text-[#433a74] "> Next js</span>. I&apos;m a quick
-          learner and collaborate closely with clients to create efficient,
-          scalable, and user-friendly solutions that solve real-world problems.
-          Let&apos;s work together to bring your ideas to life!
+          <span className="  text-teal-500"> Node.js</span>,{" "}
+          <span className="text-[#E0234E]"> NestJS</span>, and
+          <span className="text-[#433a74] "> Next.js</span>. I focus on clean
+          architecture, performance, and scalability to deliver production-ready
+          solutions that solve real-world problems.
         </div>
         <div className="font-bold text-[24px] mb-[15px] mt-[35px] text-slate-200  animate-slowfade  ">
-          Website 🌏
+          Frontend 🌏
         </div>
         <div className=" text-gray-300  my-[15px]  animate-slideright">
-          I currently have over 1.4 Years experience With html , css , Tailwind
-          css Javascript , Redux , Redux Tookit , ReactQuery , TypeScript , Next
-          js 13 , Payment Stripe , Pusher
+          React, Next.js, TypeScript, HTML, CSS, Tailwind CSS, Redux Toolkit,
+          React Query, Framer Motion
         </div>
         <div className="font-bold text-[24px] mb-[15px] mt-[35px] text-slate-200 animate-slowfade  ">
           Backend 🐳
         </div>
         <div className=" text-gray-300  mt-[15px] mb-[10px]  animate-slideright">
-          Node js , Express js , TypeScript , Mongodb , Postger Sql , FireBase ,
-          FireStore , Graphql , Payment Stripe , Basic Skill with Prisma ORM and
-          Web Scoket , Webhook , Jwt authentication , Docker , Nigx
+          Node.js, NestJS, Express.js, TypeScript, PostgreSQL, Prisma ORM,
+          REST APIs, GraphQL, Firebase, JWT authentication, WebSocket, Stripe
+        </div>
+        <div className="font-bold text-[24px] mb-[15px] mt-[35px] text-slate-200 animate-slowfade  ">
+          Cloud & DevOps ☁️
+        </div>
+        <div className=" text-gray-300  mt-[15px] mb-[10px]  animate-slideright">
+          AWS, GCP, Azure, Docker, Kubernetes, Nginx, Terraform, GitHub Actions,
+          GitLab CI/CD, Linux, Grafana, Prometheus, Redis
         </div>
         <div className="font-bold text-[24px] mb-[15px] mt-[35px] text-slate-200 animate-slowfade ">
           Mobile Application 📱
         </div>
         <div className=" text-gray-300  mt-[15px] mb-[10px]  animate-slideright">
-          React Native CLI , React NAtive Expo + Next js , TypeScript ,
-          ReduxTookit , Tailwind ,
+          React Native (CLI & Expo), TypeScript, Redux Toolkit, NativeWind
         </div>
         <div className="font-bold text-[24px] mb-[15px] mt-[35px] text-slate-200  animate-slowfade ">
-          Desktop Software 🪟🍎
+          2026 Goals / Currently Learning 🎯
         </div>
         <div className=" text-gray-300  mt-[15px] mb-[10px]  animate-slideright">
-          Tauri With Next js 13 , TypeScript , Tailwind css , ReduxTookit
+          C#, Java, .NET, Spring Boot — expanding into enterprise backend ecosystems
         </div>
         <Link
           href={"/Project"}

@@ -54,6 +54,12 @@ export const Skill_data: Skill_data[] = [
     hight: 80,
   },
   {
+    skill_name: "NestJS",
+    Image: "https://nestjs.com/img/logo-small.svg",
+    width: 80,
+    hight: 80,
+  },
+  {
     skill_name: "Next Auth",
     Image: "https://next-auth.js.org/img/logo/logo-sm.png",
     width: 80,
@@ -253,6 +259,12 @@ export const Frontend_skill: Skill_data[] = [
   {
     skill_name: "Next js 13",
     Image: "/next.png",
+    width: 80,
+    hight: 80,
+  },
+  {
+    skill_name: "NestJS",
+    Image: "https://nestjs.com/img/logo-small.svg",
     width: 80,
     hight: 80,
   },

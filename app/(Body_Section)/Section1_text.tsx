@@ -18,7 +18,7 @@ function Section1_text() {
           id="Wecom-text"
           className=" text-[12px] 310:text-[14px] 370:text-auto"
         >
-          Experience With Some Technology
+          Senior Full-Stack Engineer at Innorder
         </div>
       </motion.div>
       <motion.div
@@ -26,10 +26,10 @@ function Section1_text() {
         className=" text-[30px] 370:text-[40px] 450:text-[50px] 800:text-[60px] text-white  font-medium mt-[10px] text-center "
       >
         <span className="hidden 800:flex mb-0 1300:mb-[15px] ">
-          Think better with Next js 13
+          Tech Stack & Skills
         </span>
         <span className="flex 800:hidden  ">
-          Think better with <br /> Next js 13
+          Tech Stack <br /> & Skills
         </span>
       </motion.div>
 
@@ -38,7 +38,7 @@ function Section1_text() {
         className=" text-[20px] text-gray-200  text-center mt-[10px]"
         id="cursive"
       >
-        Never miss a note , idea or connection.
+        Building scalable systems with 4+ years of experience.
       </motion.div>
     </div>
   );
