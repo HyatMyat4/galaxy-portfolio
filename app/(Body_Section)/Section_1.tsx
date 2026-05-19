@@ -1,20 +1,13 @@
 "use client";
 import React from "react";
-import Section1_text from "./Section1_text";
-import { Skill_data } from "../../utils/constants";
-import Skill_data_provider from "./Skill_data_provider";
-import SignupProvider from "./SignupProvider";
-import Section_2 from "./Section_2";
-import {
-  Signup_data,
-  Image_src_data,
-  MobileMenu_data,
-} from "../../Redux-store/Redux-action";
+import { Image_src_data, MobileMenu_data } from "../../Redux-store/Redux-action";
 import { useSelector, useDispatch } from "react-redux";
 import Scale_Image from "./(ScaleImg)/Scale_Image";
 import { useEffect } from "react";
 import { setStarMode, setStarColur } from "../../Redux-store/Redux-action";
 import MobileMenu from "./(MobileMenu)/MobileMenu";
+import Section_2 from "./Section_2";
+
 interface Props {
   data: string;
   isMobile: boolean;
@@ -22,7 +15,6 @@ interface Props {
 
 function Section_1() {
   const dispatch = useDispatch();
-  const Signup: boolean = useSelector(Signup_data);
   const Mobilemenu: boolean = useSelector(MobileMenu_data);
   const ImageSrc: Props = useSelector(Image_src_data);
 
@@ -60,7 +52,6 @@ function Section_1() {
         ></video>
       </div>
       <Section_2 />
-      {Signup ? <SignupProvider /> : <div></div>}
       {Mobilemenu ? <MobileMenu /> : <div></div>}
       {ImageSrc.data ? <Scale_Image src_data={ImageSrc} /> : <div></div>}
     </section>
