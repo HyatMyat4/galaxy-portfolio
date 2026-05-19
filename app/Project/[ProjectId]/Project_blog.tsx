@@ -30,8 +30,6 @@ function Project_blog({ Single_data }: Props) {
     );
   };
 
-  console.log(Single_data[0].video_key, "Single_data.video_key");
-
   return (
     <div className=" w-full 800:w-[800px] h-auto flex flex-col  items-start justify-start px-[10px] 600:px-[15px] 800::px-0  ">
       <div className=" font-bold text-[25px] text-slate-200 ">
@@ -127,9 +125,9 @@ function Project_blog({ Single_data }: Props) {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
             />
           </svg>
@@ -152,9 +150,9 @@ function Project_blog({ Single_data }: Props) {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
             />
           </svg>
