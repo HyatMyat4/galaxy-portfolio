@@ -1,5 +1,5 @@
-import Home_Body from "./(Home_Body)/Home_Body";
-import Footer from "./(Footer)/Footer";
+import Home_Body from "./home_body/home_body";
+import Footer from "./footer/footer";
 export default function Home() {
   return (
     <main className="w-full h-screen">
