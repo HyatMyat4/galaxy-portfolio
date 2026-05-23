@@ -57,9 +57,9 @@ function More() {
       </div>
       <div
         ref={MenuRef}
-        className={`w-[400px] h-auto rounded-[10px] bg-[#0c0728]  p-[20px] absolute right-[-150px] animate-slideup0  mt-[43px] ${
+        className={`w-[380px] h-auto rounded-[12px] bg-[#0c0728] border border-[#7042f8]/20 p-5 absolute right-0 animate-slideup0 mt-[47px] shadow-xl ${
           open ? "flex" : " hidden"
-        } flex-col   items-center justify-center `}
+        } flex-col items-center justify-center`}
       >
         <div className="w-[100px] h-[25px] absolute top-[-22px]  "></div>
         <div className=" absolute top-[-13px]">

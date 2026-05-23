@@ -12,11 +12,11 @@ function Nav_right() {
       {!Mobilemenu && (
         <div
           onClick={() => dispatch(setMobileMenu(true))}
-          className=" mr-[8px] 310:mr-[20px] cursor-pointer flex 860:hidden animate-slowfade "
+          className="cursor-pointer flex 860:hidden animate-slowfade p-2 rounded-lg hover:bg-white/[0.07] transition-all duration-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-[30px] w-[30px] text-gray-300 "
+            className="h-[26px] w-[26px] text-gray-300"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
