@@ -33,7 +33,7 @@ export const Project: Project_data[] = [
     frontend_dowload_link:
       "https://github.com/HyatMyat4/HyatMyat_Profiol/archive/refs/heads/main.zip",
     backend_dowload_link: "",
-    project_image: "/profiol3.png",
+    project_image: "/projects-images/nextjs-profiol.png",
     project_blog:
       "Contain StarMode , Authentication Google , Facebook , Github , Instgram , Custom Star Colour Basic Animation With Fraimer Motion",
     Type: "Next js 13",
@@ -94,7 +94,7 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/Nike_Shoes/archive/refs/heads/main.zip",
     backend_dowload_link:
       "https://github.com/HyatMyat4/Nike_Backend/archive/refs/heads/main.zip",
-    project_image: "/shoemap.png",
+    project_image: "/projects-images/shoe-ecommerce.png",
     project_blog:
       "A Real Time Full Stack Shoe Ecommerce & Admin Dashboard application User Can Order and Contain Real World Payment For Stripe",
     Type: "Next js 13",
@@ -156,7 +156,7 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/AdminDashboard/archive/refs/heads/main.zip",
     backend_dowload_link:
       "https://github.com/HyatMyat4/DeshboardBackend/archive/refs/heads/main.zip",
-    project_image: "/foodd.png",
+    project_image: "/projects-images/admin-dashboard-food.png",
     project_blog:
       "A Real Time Full Stack FoodOrder & Admin Dashboard application User Can Order and Contain Payment For Stripe And AdminDashBoard Feature Admin can make Product CRUD and",
     Type: "Next js 13",
@@ -213,11 +213,11 @@ export const Project: Project_data[] = [
       "It My First ReactNative App So The have a lot of Bug!, Feature Conatin Google Auth UserCanOrder Remove Order And Containe ReactNativeMap Justlike Deliveroo",
     Type: "React Native",
     project_Img_Mobile: [
-      "/deliveroo1.jpg",
-      "/roo2.jpg",
-      "/roo3.jpg",
-      "/roo4.jpg",
-      "/roo5.jpg",
+      "/projects-images/deliveroo-1.jpg",
+      "/projects-images/deliveroo-2.jpg",
+      "/projects-images/deliveroo-3.jpg",
+      "/projects-images/deliveroo-4.jpg",
+      "/projects-images/deliveroo-5.jpg",
     ],
     indevelopment: false,
   },
@@ -277,7 +277,7 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/AdminDashboard/archive/refs/heads/main.zip",
     backend_dowload_link:
       "https://github.com/HyatMyat4/DeshboardBackend/archive/refs/heads/main.zip",
-    project_image: "/foodorder.png",
+    project_image: "/projects-images/food-order.png",
     project_blog:
       "A Real Time Full Stack FoodOrder & Admin Dashboard application User Can Order and Contain Payment For Stripe And AdminDashBoard Feature Admin can make Product CRUD and",
     Type: "Next js 13",
@@ -324,7 +324,7 @@ export const Project: Project_data[] = [
     frontend_dowload_link:
       "https://github.com/HyatMyat4/Chat_GPT4/archive/refs/heads/main.zip",
     backend_dowload_link: "",
-    project_image: "/gpt2.png",
+    project_image: "/projects-images/chatgpt-clone.png",
     project_blog:
       "A Real Time You Can Ask any thing & you can create new chat delete chat & Clear conversations Feature and google , microsoft Auth",
     Type: "Next js 13",
@@ -385,7 +385,7 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/Nike_Shoes/archive/refs/heads/main.zip",
     backend_dowload_link:
       "https://github.com/HyatMyat4/Nike_Backend/archive/refs/heads/main.zip",
-    project_image: "/nikedash.png",
+    project_image: "/projects-images/nike-dashboard.png",
     project_blog:
       "A Real Time Full Stack Shoe Ecommerce & Admin Dashboard application User Can Order and Contain Real World Payment For Stripe",
     Type: "Next js 13",
@@ -435,7 +435,7 @@ export const Project: Project_data[] = [
     frontend_dowload_link:
       "https://github.com/HyatMyat4/Profiol_2/archive/refs/heads/main.zip",
     backend_dowload_link: "",
-    project_image: "/Untitled-1.png",
+    project_image: "/projects-images/threejs-profiol.png",
     project_blog:
       "Morden Profiol Wbsite With Javascript | React | Tailwind css | Responsive Website profiol desing.",
     Type: "React",
@@ -475,7 +475,7 @@ export const Project: Project_data[] = [
     frontend_dowload_link:
       "https://github.com/HyatMyat4/ApexLegends.com/archive/refs/heads/main.zip",
     backend_dowload_link: "",
-    project_image: "/apex.png",
+    project_image: "/projects-images/apex-legends.png",
     project_blog:
       "Simple ApexLegnds Game Web application DropDown Feature Complex Responsive",
     Type: "Next js 13",
@@ -527,32 +527,11 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/GrapeMedia/archive/refs/heads/main.zip",
     backend_dowload_link:
       "https://github.com/HyatMyat4/SocialMediaBackend-/archive/refs/heads/main.zip",
-    project_image: "/reactsocialmedia1.png",
+    project_image: "/projects-images/social-media.png",
     project_blog:
       "A Real Time Full Stack SocalMedia application User Can Upload Post With Image , User Can Make Post CRUD Operations & Reaction Feature , Comment CRUD & Contain User Profile CRUD and Friends Add , Remove RealTime Messanger Can send Image,Link,Text",
     Type: "React",
     indevelopment: false,
-  },
-  {
-    title: "Profiol Server",
-    video_key: "",
-    say_xi: "",
-    say_xi_blog: "",
-    technology_feature: ["Golang", "Gin", "Mongo db", "JWT"],
-    about_this_app: "",
-    design_blog: "",
-    dependencies_blog: "",
-    package: [],
-    conclusion_blog: "",
-    youtube_link: "",
-    githhub_link: "",
-    frontend_dowload_link: "",
-    backend_dowload_link: "",
-    project_image: "/goserver.png",
-    project_blog:
-      "My First Go , Gin Server , Basic CRUD Go Server With Mongodb",
-    Type: "server",
-    indevelopment: true,
   },
   {
     title: "ShoeEcommerce Server",
@@ -577,7 +556,7 @@ export const Project: Project_data[] = [
     frontend_dowload_link: "",
     backend_dowload_link:
       "https://github.com/HyatMyat4/Nike_Backend/archive/refs/heads/main.zip",
-    project_image: "/n2.png",
+    project_image: "/projects-images/server-project.png",
     project_blog:
       " User authentication Google auth , Facebook auth , Nike Auth ..more , Mind leven CRUD functionality",
     Type: "server",
@@ -607,7 +586,7 @@ export const Project: Project_data[] = [
     frontend_dowload_link: "",
     backend_dowload_link:
       "https://github.com/HyatMyat4/DeshboardBackend/archive/refs/heads/main.zip",
-    project_image: "/n2.png",
+    project_image: "/projects-images/server-project.png",
     project_blog:
       "User authentication , Graphql  Mind leven CRUD functionality , Google auth , Facebook auth , Fastfood Auth,",
     Type: "server",
@@ -636,7 +615,7 @@ export const Project: Project_data[] = [
     frontend_dowload_link: "",
     backend_dowload_link:
       "https://github.com/HyatMyat4/Deliveroo/archive/refs/heads/main.zip",
-    project_image: "/n2.png",
+    project_image: "/projects-images/server-project.png",
     project_blog:
       "Node js Express With Postger Sql ,FireBase FireStore  CRUD functionality",
     Type: "server",

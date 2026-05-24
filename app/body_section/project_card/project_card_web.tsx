@@ -23,20 +23,22 @@ function Projectcard_Web({ data, index }: Props) {
         >
           in development⏳
         </div>
-        <div className="rounded-[7px]">
-          <Image
-            onClick={() =>
-              dispatch(
-                set_Image_src({ data: data?.project_image, isMobile: false })
-              )
-            }
-            src={data?.project_image}
-            width={1920}
-            height={1080}
-            alt="image"
-            className="rounded"
-          />
-        </div>
+        {data.Type !== "server" && (
+          <div className="rounded-[7px]">
+            <Image
+              onClick={() =>
+                dispatch(
+                  set_Image_src({ data: data?.project_image, isMobile: false })
+                )
+              }
+              src={data?.project_image}
+              width={1920}
+              height={1080}
+              alt="image"
+              className="rounded"
+            />
+          </div>
+        )}
         <div className="w-full h-auto mt-[10px] text-white flex flex-row items-center justify-between">
           <span className="font-bold text-[18px]">{data.title}</span>
         </div>

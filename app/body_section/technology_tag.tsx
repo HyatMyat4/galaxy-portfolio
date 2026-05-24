@@ -59,7 +59,6 @@ function Technology_tag({ data }: Props) {
       ))}
       {showJWT && (
         <div
-          id="cursive"
           className="tag flex flex-row font-semibold"
           style={{ backgroundColor: "#000000" }}
         >

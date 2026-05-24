@@ -14,7 +14,7 @@ function Background_Stars(props: any) {
   const sphere = useMemo(
     () =>
       // @ts-ignore
-      random.inSphere(new Float32Array(4000), { radius: 1.5 }),
+      random.inSphere(new Float32Array(6000), { radius: 1.8 }),
     [],
   );
 

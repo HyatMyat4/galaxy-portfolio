@@ -14,9 +14,6 @@ module.exports = {
       transitionProperty: {
         height: "height",
       },
-      fontFamily: {
-        roboto: "Roboto",
-      },
       colors: {
         primary: "#FFFFFF",
         secondary: "#2AC299",

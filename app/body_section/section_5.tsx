@@ -59,7 +59,7 @@ function Section_5() {
          hover:bg-[#0e082e] border-[#401f788e] p-[13px] mr-0 1250:mr-[20px] mt-[20px] 1250:mt-0  "
           >
             <Image
-              src={"/Frame 1 (1).png"}
+              src={"/projects-images/apex-movie-app-figma.png"}
               width={1920}
               height={1080}
               alt="image"
@@ -68,7 +68,7 @@ function Section_5() {
             <div className="w-full h-auto mt-[15px] flex flex-col 500:flex-row items-start 550:items-center justify-between ">
               <div className=" flex flex-row items-center ">
                 <Image
-                  src={"/figma.png"}
+                  src={"/projects-images/figma.png"}
                   width={1920}
                   height={1080}
                   alt="image"
@@ -91,7 +91,7 @@ function Section_5() {
          hover:bg-[#0e082e] border-[#401f788e] p-[13px] mt-[20px] 1250:mt-0 "
           >
             <Image
-              src={"/Frame 1.png"}
+              src={"/projects-images/coffee-shop-figma.png"}
               width={1920}
               height={1080}
               alt="image"
@@ -100,7 +100,7 @@ function Section_5() {
             <div className="w-full h-auto mt-[15px] flex flex-col 500:flex-row items-start 550:items-center justify-between ">
               <div className=" flex flex-row items-center ">
                 <Image
-                  src={"/figma.png"}
+                  src={"/projects-images/figma.png"}
                   width={1920}
                   height={1080}
                   alt="image"
