@@ -1,10 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import Technology_tag from "./technology_tag";
 import { Project } from "../../utils/constants";
+import { staggerContainer } from "../../utils/motion";
 import Projectcard_Web from "./project_card/project_card_web";
 import Projectcard_Mobile from "./project_card/project_card_mobile";
+
+const cardVariant = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "tween", duration: 0.5, ease: "easeOut" },
+  },
+};
+
 function Section_5() {
   return (
     <div className=" w-full 1300:w-[1250px] z-10 h-auto relative m-auto flex flex-col items-center justify-center overflow-hidden  pb-[100px] scroll-mt-[80px] ">
@@ -19,23 +31,31 @@ function Section_5() {
           Featured Projects
         </span>
       </div>
-      <div className=" w-full h-auto flex flex-row items-center justify-center  1250:justify-between flex-wrap p-[10px] 840:p-0  ">
+      <motion.div
+        variants={staggerContainer(0.1, 0.15)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+        className=" w-full h-auto flex flex-row items-center justify-center  1250:justify-between flex-wrap p-[10px] 840:p-0  "
+      >
         {Project.map((data: Project_data, index: any) =>
           data.Type === "React Native" ? (
-            <Projectcard_Mobile
-              key={data.title + data.project_image + index}
-              index={index}
-              data={data}
-            />
+            <motion.div key={data.title + data.project_image + index} variants={cardVariant}>
+              <Projectcard_Mobile
+                index={index}
+                data={data}
+              />
+            </motion.div>
           ) : (
-            <Projectcard_Web
-              key={data.title + data.project_image + index}
-              index={index}
-              data={data}
-            />
+            <motion.div key={data.title + data.project_image + index} variants={cardVariant}>
+              <Projectcard_Web
+                index={index}
+                data={data}
+              />
+            </motion.div>
           ),
         )}
-        <div className=" w-full 840:w-[800px] 1250:w-full flex flex-col 1250:flex-row h-auto p-0 1250:p-[10px] animate-slideup ">
+        <motion.div variants={cardVariant} className=" w-full 840:w-[800px] 1250:w-full flex flex-col 1250:flex-row h-auto p-0 1250:p-[10px] ">
           <div
             className="w-full h-auto rounded-[18px]   backdrop-blur-sm  relative overflow-hidden  border bg-[#0c0728]
          hover:bg-[#0e082e] border-[#401f788e] p-[13px] mr-0 1250:mr-[20px] mt-[20px] 1250:mt-0  "
@@ -100,8 +120,8 @@ function Section_5() {
               </a>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
