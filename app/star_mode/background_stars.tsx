@@ -1,47 +1,50 @@
 "use client";
-import React from "react";
-import { useState, useRef, Suspense } from "react";
+import React, { useState, useRef, useEffect, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import { useSelector } from "react-redux";
 import { StarMode_data, StarColur_data } from "../../redux_store/redux_action";
+
 function Background_Stars(props: any) {
-  const colour = useSelector(StarColur_data);
-  const [colourData, setcolourData] = useState<string>("#c2410c");
+  const defaultColour = useSelector(StarColur_data);
   const ref: any = useRef();
   const [sphere] = useState(() =>
     // @ts-ignore
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
 
+  const targetColor = useRef({ r: 1, g: 1, b: 1 });
+
+  useEffect(() => {
+    const intervalID = setInterval(() => {
+      targetColor.current = {
+        r: Math.random(),
+        g: Math.random(),
+        b: Math.random(),
+      };
+    }, 10000);
+    return () => clearInterval(intervalID);
+  }, []);
+
   useFrame((state, delta) => {
+    if (!ref.current) return;
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
+
+    const c = ref.current.material.color;
+    const t = targetColor.current;
+    c.r += (t.r - c.r) * 0.02;
+    c.g += (t.g - c.g) * 0.02;
+    c.b += (t.b - c.b) * 0.02;
   });
-
-  function getRandomColor() {
-    // Generate a random number between 0 and 255 for each RGB component
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-
-    // Return the color in the form of a CSS RGB string
-    setcolourData(`rgb(${r}, ${g}, ${b})`);
-  }
-
-  /*
-  const intervalID = setInterval(() => {
-    getRandomColor();
-  }, 6000);
-  */
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color={colour}
+          color={defaultColour || "#c2410c"}
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
