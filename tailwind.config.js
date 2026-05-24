@@ -27,27 +27,12 @@ module.exports = {
 
       animation: {
         slideup: "slideup 0.7s ease-in-out",
-        slideup42: "slideup42 1s ease-in-out",
-        slidedown: "slidedown 1s ease-in-out",
-        slidedown2: "slidedown2 1.8s ease-in-out",
         slideleft: "slideleft 1.2s ease-in-out",
-        slideleftT2: "slideleft 1s ease-in-out",
-        slideleftT3: "slideleft 1.3s ease-in-out",
-        slideleftT4: "slideleft 1.6s ease-in-out",
-        slideleft3: "slideleft3 1s ease-in-out",
-        slideleft2: "slideleft2 1.8s ease-in-out",
         slideright: "slideright 1s ease-in-out",
-        slideright2: "slideright2 1.3s ease-in-out",
         slowfade: "slowfade 2.2s ease-in-out",
-        slowfade2: "slowfade2 1.5s ease-in-out",
-        wave: "wave 1.2s linear infinite",
       },
       keyframes: {
         slowfade: {
-          from: { opacity: 0 },
-          to: { opacity: 1 },
-        },
-        slowfade2: {
           from: { opacity: 0 },
           to: { opacity: 1 },
         },
@@ -55,42 +40,13 @@ module.exports = {
           from: { opacity: 0, transform: "translateY(5%)" },
           to: { opacity: 1, transform: "none" },
         },
-        slideup42: {
-          from: { opacity: 0, transform: "translateY(100%)" },
-          to: { opacity: 1, transform: "none" },
-        },
-        slidedown: {
-          from: { opacity: 0, transform: "translateY(-25%)" },
-          to: { opacity: 1, transform: "none" },
-        },
-        slidedown2: {
-          from: { opacity: 0, transform: "translateY(-600px)" },
-          to: { opacity: 1, transform: "none" },
-        },
         slideleft: {
           from: { opacity: 0, transform: "translateX(-250px)" },
-          to: { opacity: 1, transform: "translateX(0)" },
-        },
-        slideleft3: {
-          from: { opacity: 0, transform: "translateX(-350px)" },
-          to: { opacity: 1, transform: "translateX(0)" },
-        },
-        slideleft2: {
-          from: { opacity: 0, transform: "translateX(-500px)" },
           to: { opacity: 1, transform: "translateX(0)" },
         },
         slideright: {
           from: { opacity: 0, transform: "translateX(20px)" },
           to: { opacity: 1, transform: "translateX(0)" },
-        },
-        slideright2: {
-          from: { opacity: 0, transform: "translateX(500px)" },
-          to: { opacity: 1, transform: "translateX(0)" },
-        },
-        wave: {
-          "0%": { transform: "scale(0)" },
-          "50%": { transform: "scale(1)" },
-          "100%": { transform: "scale(0)" },
         },
       },
     },

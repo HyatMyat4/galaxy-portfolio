@@ -6,8 +6,6 @@ export interface actionState {
     data: string;
     isMobile: boolean;
   };
-  opctionchoose: string;
-  SearchQuery: string;
   StarMode: string;
   StarColur: string;
   MobileMenu: boolean;
@@ -18,8 +16,6 @@ const initialState: actionState = {
     data: "",
     isMobile: false,
   },
-  opctionchoose: "All",
-  SearchQuery: "",
   StarMode: "",
   StarColur: "",
   MobileMenu: false,
@@ -34,18 +30,6 @@ export const actionSlice = createSlice({
       action: { payload: any; type: string }
     ) => {
       state.Image_src = action.payload;
-    },
-    setopctionchoose: (
-      state: actionState,
-      action: { payload: any; type: string }
-    ) => {
-      state.opctionchoose = action.payload;
-    },
-    setSearchQuery: (
-      state: actionState,
-      action: { payload: any; type: string }
-    ) => {
-      state.SearchQuery = action.payload;
     },
     setStarMode: (
       state: actionState,
@@ -70,19 +54,14 @@ export const actionSlice = createSlice({
 
 export const {
   set_Image_src,
-  setopctionchoose,
-  setSearchQuery,
   setStarMode,
   setStarColur,
   setMobileMenu,
 } = actionSlice.actions;
 
 export const Image_src_data = (state: RootState) => state.action.Image_src;
-export const SearchQuery_data = (state: RootState) => state.action.SearchQuery;
 export const StarMode_data = (state: RootState) => state.action.StarMode;
 export const StarColur_data = (state: RootState) => state.action.StarColur;
 export const MobileMenu_data = (state: RootState) => state.action.MobileMenu;
-export const opctionchoose_data = (state: RootState) =>
-  state.action.opctionchoose;
 
 export default actionSlice.reducer;
