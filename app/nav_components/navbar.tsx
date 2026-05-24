@@ -18,9 +18,9 @@ function Navbar() {
              border-[#7042f861] px-[20px]
            py-[10px] rounded-full "
           >
-            <span className="Nav_text px-[10px]  ">About Me</span>
-            <span className="Nav_text px-[10px]   ">Technical Skills</span>
-            <span className="Nav_text px-[10px]   ">Experience</span>
+            <a href="#Section_2" className="Nav_text px-[10px]">About Me</a>
+            <a href="#Section_4" className="Nav_text px-[10px]">Technical Skills</a>
+            <a href="#Section_3" className="Nav_text px-[10px]">Experience</a>
           </div>
         </div>
       </div>

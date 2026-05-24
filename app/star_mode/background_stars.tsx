@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
+import * as THREE from "three";
 import { useSelector } from "react-redux";
 import { StarMode_data, StarColur_data } from "../../redux_store/redux_action";
 
@@ -14,16 +15,14 @@ function Background_Stars(props: any) {
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
 
-  const targetColor = useRef({ r: 1, g: 1, b: 1 });
+  const palette = ["#0369A1", "#4d7c0f", "#c2410c", "#7e22ce", "#a16207", "#0f766e", "#be123c", "#4338ca"];
 
   useEffect(() => {
     const intervalID = setInterval(() => {
-      targetColor.current = {
-        r: Math.random(),
-        g: Math.random(),
-        b: Math.random(),
-      };
-    }, 10000);
+      if (!ref.current) return;
+      const color = new THREE.Color(palette[Math.floor(Math.random() * palette.length)]);
+      ref.current.material.color.set(color);
+    }, 7000);
     return () => clearInterval(intervalID);
   }, []);
 
@@ -31,12 +30,6 @@ function Background_Stars(props: any) {
     if (!ref.current) return;
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
-
-    const c = ref.current.material.color;
-    const t = targetColor.current;
-    c.r += (t.r - c.r) * 0.02;
-    c.g += (t.g - c.g) * 0.02;
-    c.b += (t.b - c.b) * 0.02;
   });
 
   return (
