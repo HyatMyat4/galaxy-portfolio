@@ -11,7 +11,7 @@ interface Props {
 function Projectcard_Mobile({ data, index }: Props) {
   return (
     <Link
-      href={`/Project/${data.video_key}`}
+      href={`/project/${data.video_key}`}
       className=" w-full 840:w-[800px] 1280:w-full h-auto p-[10px] mx-[0px] 1280:mx-[15px]    animate-slideup    "
     >
       <div className="w-full h-auto rounded-[14px]   backdrop-blur-sm  relative overflow-hidden  border bg-[#0c0728] hover:bg-[#0e082e] border-[#401f788e] p-[13px] ">

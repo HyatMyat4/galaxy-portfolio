@@ -162,7 +162,7 @@ function Project_blog({ Single_data }: Props) {
         </a>
       </div>
       <Link
-        href={"/Project"}
+        href={"/project"}
         className=" flex flex-row items-center text-slate-200 font-normal cursor-pointer text-[14px] my-[20px] "
       >
         Go Back To

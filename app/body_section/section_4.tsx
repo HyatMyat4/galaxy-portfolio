@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { fadeIn, textVariant } from "../../utils/motion";
@@ -51,7 +52,6 @@ const categories: Category[] = [
     skills: [
       { name: "AWS",             icon: "/skills/AWS.svg" },
       { name: "GCP",             icon: "/skills/GCP.svg" },
-      { name: "Azure",           icon: "/skills/Azure.svg" },
       { name: "Docker",          icon: "/skills/Docker.svg" },
       { name: "Kubernetes",      icon: "/skills/Kubernetes.svg" },
       { name: "Linux",           icon: "/skills/Linux.svg" },
@@ -78,9 +78,7 @@ const categories: Category[] = [
     title: "Currently Learning",
     skills: [
       { name: "C#",     icon: "/skills/CSharp.svg" },
-      { name: "Java",   icon: "/skills/Java.svg" },
       { name: ".NET",   icon: "/skills/DotNet.svg" },
-      { name: "Spring", icon: "/skills/Spring.svg" },
     ],
   },
 ];
@@ -88,7 +86,7 @@ const categories: Category[] = [
 function SkillPill({ name, icon }: Skill) {
   return (
     <div className="flex items-center gap-[8px] px-[12px] py-[8px] rounded-[8px] bg-[#080520] border border-[#2a1f4e] hover:border-[#7042f8]/50 hover:bg-[#0e0830] transition-all duration-200 cursor-default select-none">
-      <img
+      <Image
         src={icon}
         alt={name}
         width={20}
@@ -111,10 +109,15 @@ function Section_4() {
         <motion.div
           variants={textVariant(0)}
           id="Wecom-box"
-          className="px-[15px] py-[4px] border border-[#7042f88b] opacity-[0.9] mb-[15px]"
+          className="px-[15px] py-[4px] border border-[#7042f88b] opacity-[0.9] mb-0 1300:mb-[15px]"
         >
-          <SparklesIcon className="h-4 w-4 text-[#b49bff] mr-[10px]" />
-          <div className="text-[13px]">Senior Full-Stack Engineer at Innorder</div>
+          <SparklesIcon className="h-4 370:h-5 w-4 370:w-5 text-[#b49bff] mr-[10px]" />
+          <div
+            id="Wecom-text"
+            className="text-[12px] 310:text-[14px] 370:text-auto"
+          >
+            Senior Full-Stack Engineer at Innorder
+          </div>
         </motion.div>
         <motion.h2
           variants={textVariant(1)}
@@ -138,7 +141,7 @@ function Section_4() {
         {categories.map((cat, ci) => (
           <motion.div
             key={cat.title}
-            variants={fadeIn("up", "spring", ci * 0.12, 0.6)}
+            variants={fadeIn("up", "tween", ci * 0.12, 0.6)}
             className="flex flex-col gap-[12px]"
           >
             {/* Category label + divider */}
@@ -164,7 +167,7 @@ function Section_4() {
         <div className="w-[1000px] 1000:w-full h-full z-[-10] opacity-[0.08] absolute flex items-center justify-center">
           <video
             className="w-full h-auto"
-            preload="false"
+            preload="none"
             playsInline
             loop
             muted
@@ -178,4 +181,4 @@ function Section_4() {
   );
 }
 
-export default SectionWrapper(Section_4, "Section_4");
+export default SectionWrapper(Section_4, "technical_skill");

@@ -27,10 +27,15 @@ function Section_3() {
           <motion.div
             variants={textVariant(0)}
             id="Wecom-box"
-            className="px-[15px] py-[4px] border border-[#7042f88b] opacity-[0.9] mb-[15px]"
+            className="px-[15px] py-[4px] border border-[#7042f88b] opacity-[0.9] mb-0 1300:mb-[15px]"
           >
-            <SparklesIcon className="h-4 w-4 text-[#b49bff] mr-[10px]" />
-            <div className="text-[13px]">Professional Journey</div>
+            <SparklesIcon className="h-4 370:h-5 w-4 370:w-5 text-[#b49bff] mr-[10px]" />
+            <div
+              id="Wecom-text"
+              className="text-[12px] 310:text-[14px] 370:text-auto"
+            >
+              Professional Journey
+            </div>
           </motion.div>
           <motion.h2
             variants={textVariant(1)}
@@ -45,7 +50,7 @@ function Section_3() {
 
         <div className="w-full 800:w-[800px] m-auto">
           <motion.div
-            variants={fadeIn("up", "spring", 0.2, 0.75)}
+            variants={fadeIn("up", "tween", 0.2, 0.75)}
             className="border border-[#401f788e] rounded-[14px] bg-[#0c0728]/70 backdrop-blur-sm p-[24px]"
           >
             <div className="flex flex-col 600:flex-row items-start 600:items-center justify-between mb-[16px] gap-[8px]">
@@ -77,7 +82,7 @@ function Section_3() {
       <div className="w-[1500px] h-full z-[-10] absolute top-0 flex flex-row items-start justify-center opacity-20">
         <video
           className="w-full h-auto"
-          preload="false"
+          preload="none"
           playsInline
           loop
           muted
@@ -90,4 +95,4 @@ function Section_3() {
   );
 }
 
-export default SectionWrapper(Section_3, "Section_3");
+export default SectionWrapper(Section_3, "experience");

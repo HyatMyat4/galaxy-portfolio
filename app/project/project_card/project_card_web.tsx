@@ -12,7 +12,7 @@ interface Props {
 function Projectcard_Web({ data, index }: Props) {
   return (
     <Link
-      href={`/Project/${data.video_key}`}
+      href={`/project/${data.video_key}`}
       className="w-auto h-auto mb-[20px] 840:mb-0  "
     >
       <div className=" w-full 840:w-[800px] 1280:w-[390px] h-auto 1280:h-[440px] rounded-[14px] relative overflow-hidden   backdrop-blur-sm  m-0 840:m-[10px]  border bg-[#0c0728] hover:bg-[#0e082e] border-[#401f788e] p-[13px] ">

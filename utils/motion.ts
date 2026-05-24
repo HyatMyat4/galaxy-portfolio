@@ -8,9 +8,10 @@ export const textVariant = (delay: number) => {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
-        duration: 1.25,
+        type: "tween",
+        duration: 0.6,
         delay: delay,
+        ease: "easeOut",
       },
     },
   };
@@ -93,8 +94,9 @@ export const staggerContainer = (
     hidden: {},
     show: {
       transition: {
-        type: "spring",
-        duration: 1.25,
+        type: "tween",
+        duration: 0.5,
+        ease: "easeOut",
         staggerChildren: staggerChildren,
         delayChildren: delayChildren || 0,
       },

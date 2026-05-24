@@ -7,6 +7,10 @@
   .Nav_text {
     @apply text-sm text-black dark:text-gray-300  hover:text-[black] dark:hover:text-gray-50 cursor-pointer animate-slowfade;
   }
+  .Nav_text.active {
+    @apply text-white;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.8);
+  }
   .Home_a {
     @apply text-sky-400 hover:underline cursor-pointer underline-offset-4  mx-[2px];
   }
@@ -22,8 +26,18 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 section {
   height: 900px;
+  scroll-margin-top: 80px;
 }
 
 #cursive {

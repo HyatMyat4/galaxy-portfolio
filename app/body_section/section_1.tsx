@@ -42,18 +42,18 @@ function Section_1() {
       <div className=" w-[1250px]  h-full z-[-10] absolute   top-[-280px]  flex flex-row   items-start justify-center ">
         <video
           className="w-full h-auto  rotate-180  "
-          preload="false"
+          preload="none"
           playsInline
           loop
           muted
           // @ts-ignore
           autoPlay="autoplay"
           src="/q-c3d7becf.webm"
-        ></video>
+        />
       </div>
       <Section_2 />
-      {Mobilemenu ? <MobileMenu /> : <div></div>}
-      {ImageSrc.data ? <Scale_Image src_data={ImageSrc} /> : <div></div>}
+      {Mobilemenu && <MobileMenu />}
+      {ImageSrc.data && <Scale_Image src_data={ImageSrc} />}
     </section>
   );
 }

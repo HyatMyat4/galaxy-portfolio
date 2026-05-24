@@ -19,8 +19,6 @@ module.exports = {
       },
       colors: {
         primary: "#FFFFFF",
-        // primary: "#020101",
-        // primary: "#020201",
         secondary: "#2AC299",
       },
       boxShadow: {
@@ -29,72 +27,25 @@ module.exports = {
 
       animation: {
         slideup: "slideup 0.7s ease-in-out",
-        slideup0: "slideup 0.5s ease-in-out",
         slideup42: "slideup42 1s ease-in-out",
-        slideup422: "slideup42 0.6s ease-in-out",
-        slideup423: "slideup42 1.4s ease-in-out",
-
         slidedown: "slidedown 1s ease-in-out",
         slidedown2: "slidedown2 1.8s ease-in-out",
-        slidelefttranfrom: "slidelefttranfrom 1.5s ease-in-out",
         slideleft: "slideleft 1.2s ease-in-out",
         slideleftT2: "slideleft 1s ease-in-out",
         slideleftT3: "slideleft 1.3s ease-in-out",
         slideleftT4: "slideleft 1.6s ease-in-out",
-        slideleft0: "slideleft 0.3s ease-in-out",
         slideleft3: "slideleft3 1s ease-in-out",
-        slideleft4: "slideleft3 2.3s ease-in-out",
         slideleft2: "slideleft2 1.8s ease-in-out",
         slideright: "slideright 1s ease-in-out",
         slideright2: "slideright2 1.3s ease-in-out",
-        slideright3: "slideright2 1.9s ease-in-out",
-        widthChange: "widthChange 8s ease-in-out",
-        dropdownHight: "dropdownHight 0.4s  ease",
-        dropupHight: "dropupHight 1s ease-in-out",
-        wave: "wave 1.2s linear infinite",
         slowfade: "slowfade 2.2s ease-in-out",
         slowfade2: "slowfade2 1.5s ease-in-out",
-        slowfade3: "slowfade2 0.7s ease-in-out",
-        shake: "shake 0.1s linear infinite",
-        slowfadehidden: "slowfadehidden 2s ease-in-out",
-        slowspin: "slowspin 0.2s linear infinite",
-        Fastspin: "slowspin 2.5s linear infinite",
-        flip: "flip 2s linear infinite",
-        VerySlowspin: "slowspin 3.5s linear infinite",
-        pluseCustom: "pluseCustom 1s linear infinite",
+        wave: "wave 1.2s linear infinite",
       },
       keyframes: {
-        shake: {
-          from: { transform: "rotate(0deg)" },
-          to: { transform: "rotate(10deg)" },
-        },
-        slowspin: {
-          from: { transform: "rotate(0deg)" },
-          to: { transform: "rotate(360deg)" },
-        },
-        flip: {
-          from: { transform: "rotateY(0deg)" },
-          to: { transform: "rotateY(180deg)" },
-        },
-        slowfade2: {
-          from: { opacity: 0 },
-          to: { opacity: 1 },
-        },
-        dropdownHight: {
-          from: { height: "0%" },
-          to: { height: "95%" },
-        },
-        dropupHight: {
-          from: { height: "100%" },
-          to: { height: "0%" },
-        },
         slowfade: {
           from: { opacity: 0 },
           to: { opacity: 1 },
-        },
-        slowfadehidden: {
-          from: { transform: "rotate(0deg)" },
-          to: { transform: "rotate(180deg)" },
         },
         slowfade2: {
           from: { opacity: 0 },
@@ -102,10 +53,6 @@ module.exports = {
         },
         slideup: {
           from: { opacity: 0, transform: "translateY(5%)" },
-          to: { opacity: 1, transform: "none" },
-        },
-        slideup0: {
-          from: { opacity: 0, transform: "translateY(50%)" },
           to: { opacity: 1, transform: "none" },
         },
         slideup42: {
@@ -124,10 +71,6 @@ module.exports = {
           from: { opacity: 0, transform: "translateX(-250px)" },
           to: { opacity: 1, transform: "translateX(0)" },
         },
-        slidelefttranfrom: {
-          from: { opacity: 0, transform: "translateY(290px)" },
-          to: { opacity: 1, transform: "translateY(0)" },
-        },
         slideleft3: {
           from: { opacity: 0, transform: "translateX(-350px)" },
           to: { opacity: 1, transform: "translateX(0)" },
@@ -143,14 +86,6 @@ module.exports = {
         slideright2: {
           from: { opacity: 0, transform: "translateX(500px)" },
           to: { opacity: 1, transform: "translateX(0)" },
-        },
-        widthChange: {
-          from: { transform: "w-[90%]" },
-          to: { transform: "w-[100%]" },
-        },
-        pluseCustom: {
-          from: { opacity: 0 },
-          to: { opacity: 1 },
         },
         wave: {
           "0%": { transform: "scale(0)" },

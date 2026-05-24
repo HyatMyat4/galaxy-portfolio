@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Provider from "./provider/provider";
 import Navbar from "./nav_components/navbar";
 import StarsCanvas from "./star_mode/background_stars";
+import SmoothScrollProvider from "./smooth_scroll_provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Provider>
           <StarsCanvas />
           <Navbar />
+          <SmoothScrollProvider />
           {children}
         </Provider>
       </body>

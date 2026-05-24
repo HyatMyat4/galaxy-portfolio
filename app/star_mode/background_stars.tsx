@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useRef, useEffect, Suspense } from "react";
+import React, { useRef, Suspense, useEffect, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload } from "@react-three/drei";
+import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import * as THREE from "three";
 import { useSelector } from "react-redux";
@@ -10,18 +10,21 @@ import { StarMode_data, StarColur_data } from "../../redux_store/redux_action";
 function Background_Stars(props: any) {
   const defaultColour = useSelector(StarColur_data);
   const ref: any = useRef();
-  const [sphere] = useState(() =>
-    // @ts-ignore
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+  const targetColor = useRef(new THREE.Color("#c2410c"));
+  const sphere = useMemo(
+    () =>
+      // @ts-ignore
+      random.inSphere(new Float32Array(4000), { radius: 1.5 }),
+    []
   );
 
   const palette = ["#0369A1", "#4d7c0f", "#c2410c", "#7e22ce", "#a16207", "#0f766e", "#be123c", "#4338ca"];
 
+  const colorRef = useRef(new THREE.Color());
   useEffect(() => {
     const intervalID = setInterval(() => {
-      if (!ref.current) return;
-      const color = new THREE.Color(palette[Math.floor(Math.random() * palette.length)]);
-      ref.current.material.color.set(color);
+      colorRef.current.set(palette[Math.floor(Math.random() * palette.length)]);
+      targetColor.current = colorRef.current;
     }, 7000);
     return () => clearInterval(intervalID);
   }, []);
@@ -30,6 +33,7 @@ function Background_Stars(props: any) {
     if (!ref.current) return;
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
+    ref.current.material.color.lerp(targetColor.current, delta * 0.5);
   });
 
   return (
@@ -59,8 +63,6 @@ const StarsCanvas = () => {
         <Suspense fallback={null}>
           <Background_Stars />
         </Suspense>
-
-        <Preload all />
       </Canvas>
     </div>
   );

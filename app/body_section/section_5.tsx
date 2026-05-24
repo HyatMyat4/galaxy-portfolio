@@ -7,7 +7,8 @@ import Projectcard_Web from "./project_card/project_card_web";
 import Projectcard_Mobile from "./project_card/project_card_mobile";
 function Section_5() {
   return (
-    <div className=" w-full 1300:w-[1250px] z-10 h-auto relative m-auto flex flex-col items-center justify-center overflow-hidden  pb-[100px] ">
+    <div className=" w-full 1300:w-[1250px] z-10 h-auto relative m-auto flex flex-col items-center justify-center overflow-hidden  pb-[100px] scroll-mt-[80px] ">
+      <span id="projects" className="sr-only">&nbsp;</span>
       <div className=" w-full 840:w-[830px] 1250:w-full h-auto flex flex-col  items-start justify-center my-[15px] px-[15px] 1300:px-[10px] ">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500  font-semibold text-[20px] ">
           Projects
@@ -17,7 +18,7 @@ function Section_5() {
         </span>
       </div>
       <div className=" w-full h-auto flex flex-row items-center justify-center  1250:justify-between flex-wrap p-[10px] 840:p-0  ">
-        {Project.slice(0, 7).map((data: Project_data, index: any) =>
+        {Project.map((data: Project_data, index: any) =>
           data.Type === "React Native" ? (
             <Projectcard_Mobile
               key={data.title + data.project_image + index}

@@ -7,18 +7,18 @@ import { Project } from "../../../utils/constants";
 
 export function generateStaticParams() {
   return Project.filter((p) => p.video_key).map((p) => ({
-    ProjectId: p.video_key,
+    project_id: p.video_key,
   }));
 }
 type Props = {
   params: {
-    ProjectId: string;
+    project_id: string;
   };
- 
+
 };
-function page({ params: { ProjectId } }: Props  ) {
+function page({ params: { project_id } }: Props  ) {
   const Single_data: Project_data | any = Project?.filter(
-    (data: Project_data) => data.video_key === ProjectId
+    (data: Project_data) => data.video_key === project_id
   );
   return (
     <div className="w-full h-screen m-auto pt-[62px] flex flex-col items-center justify-start ">

@@ -16,7 +16,7 @@ function Section_2() {
         <motion.div
           variants={textVariant(2)}
           id="Wecom-box"
-          className=" px-[15px] py-[6px]  border border-[#7042f88b]  opacity-[0.9]   "
+          className=" px-[15px] py-[4px]  border border-[#7042f88b]  opacity-[0.9] mb-0 1300:mb-[15px]  "
         >
           <SparklesIcon className=" h-4 370:h-5 w-4 370:w-5  text-[#b49bff] mr-[10px]" />
           <div
@@ -46,7 +46,7 @@ function Section_2() {
           production-ready code that creates real-world value.
         </p>
         <a
-          href="#Section_4"
+          href="#technical_skill"
           id="button-primary"
           className=" animate-slideleftT4 px-[20px] py-[7px] text-white  cursor-pointer hover:scale-105 active:scale-90  transition-all   duration-150 select-none rounded-[5px]"
         >
@@ -100,4 +100,4 @@ function Section_2() {
   );
 }
 
-export default SectionWrapper(Section_2, "Section_2");
+export default SectionWrapper(Section_2, "about_me");

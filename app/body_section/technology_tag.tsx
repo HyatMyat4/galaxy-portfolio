@@ -4,196 +4,70 @@ interface Props {
   data: Project_data;
 }
 
+interface TagDef {
+  key: string;
+  label: string;
+  bg: string;
+  text: string;
+}
+
+const TAGS: TagDef[] = [
+  { key: "html", label: "html", bg: "#E54F24", text: "text-white" },
+  { key: "css", label: "css", bg: "#2062AF", text: "text-white" },
+  { key: "Javascript", label: "Javascript", bg: "#F0DB4F", text: "text-black" },
+  { key: "Tailwind", label: "Tailwind", bg: "#4ad7f0", text: "text-[#258899]" },
+  { key: "React", label: "React", bg: "#83e0f8", text: "text-[#226879]" },
+  { key: "React Native", label: "React Native", bg: "#83e0f8", text: "text-[#1b859f]" },
+  { key: "Tauri", label: "Tauri", bg: "#FFC131", text: "text-[#44a1ab]" },
+  { key: "Redux", label: "Redux", bg: "#764ABC", text: "text-white" },
+  { key: "ReactQuery", label: "ReactQuery", bg: "#FF4154", text: "text-white" },
+  { key: "Type Script", label: "Type Script", bg: "#2D79C7", text: "text-[#b0cae4]" },
+  { key: "Next js 13", label: "Next js 13", bg: "#13224a", text: "text-[#fdfdfd]" },
+  { key: "Node js", label: "Node js", bg: "#79B562", text: "text-[#fdfdfd]" },
+  { key: "Golang", label: "Go", bg: "#00ACD7", text: "text-[#fdfdfd]" },
+  { key: "Gin", label: "Gin", bg: "#0090D1", text: "text-[#f1db4b]" },
+  { key: "Express js", label: "Express js", bg: "#333331", text: "text-gray-300" },
+  { key: "Mongo db", label: "Mongo db", bg: "#10AA50", text: "text-[#fdfdfd]" },
+  { key: "Firebase", label: "Firebase", bg: "#e9b422", text: "text-[#fdfdfd]" },
+  { key: "Postger sql", label: "Postger sql", bg: "#336791", text: "text-[#fdfdfd]" },
+  { key: "My sql", label: "My sql", bg: "#01526A", text: "text-[#fdfdfd]" },
+  { key: "Framer Motion", label: "Framer Motion", bg: "#ff13ffd3", text: "text-[#fdfdfd]" },
+  { key: "Graphql", label: "Graphql", bg: "#E632AD", text: "text-[#fdfdfd]" },
+  { key: "Prisma", label: "Prisma", bg: "#123A50", text: "text-[#fdfdfd]" },
+  { key: "Docker", label: "Docker", bg: "#2496ED", text: "text-[#fdfdfd]" },
+  { key: "Stripe", label: "Stripe", bg: "#665BFF", text: "text-[#fdfdfd]" },
+  { key: "Expo", label: "Expo", bg: "#422EDF", text: "text-[#fdfdfd]" },
+];
+
 function Technology_tag({ data }: Props) {
+  const visibleTags = data.technology_feature
+    ? TAGS.filter((t) => data.technology_feature.includes(t.key))
+    : [];
+
+  const showJWT = data.technology_feature?.includes("JWT");
+
   return (
-    <div className="w-full h-auto flex flex-row items-center flex-wrap mt-[10px] ">
-      <div
-        className={`tag ${
-          data.technology_feature.includes("html") ? "" : " hidden"
-        }  bg-[#E54F24]    text-white  `}
-      >
-        html
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("css") ? "" : " hidden"
-        }  bg-[#2062AF]    text-white `}
-      >
-        css
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Javascript") ? "" : " hidden"
-        }  bg-[#F0DB4F]    text-black `}
-      >
-        Javascript
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Tailwind") ? "" : " hidden"
-        }  bg-[#4ad7f0]    text-[#258899] `}
-      >
-        Tailwind
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("React") ? "" : " hidden"
-        }   bg-[#83e0f8]    text-[#226879] `}
-      >
-        React
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("React Native") ? "" : " hidden"
-        }  bg-[#83e0f8]    text-[#1b859f] `}
-      >
-        React Native
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Tauri") ? "" : " hidden"
-        }  bg-[#FFC131]    text-[#44a1ab] `}
-      >
-        Tauri
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Redux") ? "" : " hidden"
-        }  bg-[#764ABC]    text-white `}
-      >
-        Redux
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("ReactQuery") ? "" : " hidden"
-        }  bg-[#FF4154]    text-white `}
-      >
-        ReactQuery
-      </div>
-
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Type Script") ? "" : " hidden"
-        }  bg-[#2D79C7]    text-[#b0cae4] `}
-      >
-        Type Script
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Next js 13") ? "" : " hidden"
-        }  bg-[#13224a]    text-[#fdfdfd]  `}
-      >
-        Next js 13
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Node js") ? "" : " hidden"
-        }  bg-[#79B562]    text-[#fdfdfd] `}
-      >
-        Node js
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Golang") ? "" : " hidden"
-        }  bg-[#00ACD7]    text-[#fdfdfd] `}
-      >
-        Go
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Gin") ? "" : " hidden"
-        }  bg-[#0090D1]    text-[#f1db4b] `}
-      >
-        Gin
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Express js") ? "" : " hidden"
-        }  bg-[#333331]    text-gray-300 `}
-      >
-        Express js
-      </div>
-
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Mongo db") ? "" : " hidden"
-        }  bg-[#10AA50]    text-[#fdfdfd]  `}
-      >
-        Mongo db
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Firebase") ? "" : " hidden"
-        }  bg-[#e9b422]    text-[#fdfdfd]  `}
-      >
-        Firebase
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Postger sql") ? "" : " hidden"
-        }  bg-[#336791]    text-[#fdfdfd]  `}
-      >
-        Postger sql
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("My sql") ? "" : " hidden"
-        }  bg-[#01526A]    text-[#fdfdfd]  `}
-      >
-        My sql
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Framer Motion") ? "" : " hidden"
-        }  bg-[#ff13ffd3]   text-[#fdfdfd] `}
-      >
-        Framer Motion
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Graphql") ? "" : " hidden"
-        }   bg-[#E632AD]     text-[#fdfdfd] `}
-      >
-        Graphql
-      </div>
-      <div
-        id="cursive"
-        className={`tag ${
-          data.technology_feature.includes("JWT") ? "" : " hidden"
-        }  bg-[#000000]    text-[#fdfdfd] flex flex-row font-semibold `}
-      >
-        <span className=" text-[#CB37F2] mr-[3px]">Json</span>
-        <span className=" text-[#00B0E5]  mr-[3px]">Web</span>
-        <span className=" text-[#EE0156]">Tocken</span>
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Prisma") ? "" : " hidden"
-        }  bg-[#123A50]    text-[#fdfdfd]  `}
-      >
-        Prisma
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Docker") ? "" : " hidden"
-        }  bg-[#2496ED]    text-[#fdfdfd]  `}
-      >
-        Docker
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Stripe") ? "" : " hidden"
-        }  bg-[#665BFF]    text-[#fdfdfd]  `}
-      >
-        Stripe
-      </div>
-      <div
-        className={`tag ${
-          data.technology_feature.includes("Expo") ? "" : " hidden"
-        }  bg-[#422EDF]    text-[#fdfdfd]  `}
-      >
-        Expo
-      </div>
+    <div className="w-full h-auto flex flex-row items-center flex-wrap mt-[10px]">
+      {visibleTags.map((tag) => (
+        <div
+          key={tag.key}
+          className="tag"
+          style={{ backgroundColor: tag.bg, color: "#fdfdfd" }}
+        >
+          {tag.label}
+        </div>
+      ))}
+      {showJWT && (
+        <div
+          id="cursive"
+          className="tag flex flex-row font-semibold"
+          style={{ backgroundColor: "#000000" }}
+        >
+          <span className="text-[#CB37F2] mr-[3px]">Json</span>
+          <span className="text-[#00B0E5] mr-[3px]">Web</span>
+          <span className="text-[#EE0156]">Tocken</span>
+        </div>
+      )}
     </div>
   );
 }
