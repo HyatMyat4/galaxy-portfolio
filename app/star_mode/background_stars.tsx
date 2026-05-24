@@ -15,10 +15,17 @@ function Background_Stars(props: any) {
     () =>
       // @ts-ignore
       random.inSphere(new Float32Array(4000), { radius: 1.5 }),
-    []
+    [],
   );
 
-  const palette = ["#0369A1", "#4d7c0f", "#c2410c", "#7e22ce", "#a16207", "#0f766e", "#be123c", "#4338ca"];
+  const palette = [
+    "#0369A1",
+    "#7e22ce",
+    "#a16207",
+    "#0f766e",
+    "#be123c",
+    "#4338ca",
+  ];
 
   const colorRef = useRef(new THREE.Color());
   useEffect(() => {

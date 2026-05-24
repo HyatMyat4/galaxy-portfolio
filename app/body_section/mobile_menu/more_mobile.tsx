@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import ChooseColour from "../../nav_components/choose_colour";
 import { useDispatch, useSelector } from "react-redux";
+import Link from "next/link";
 import {
   setStarMode,
   StarMode_data,
@@ -34,7 +34,7 @@ function MoreMobile() {
 
   return (
     <div
-      className={`w-full h-auto rounded-[10px] bg-[#0c0728] relative  p-[10px]  animate-slideup0  mt-[23px] flex   flex-col   items-center justify-center `}
+      className={`w-full h-auto rounded-[10px] bg-[#0c0728] relative  p-[10px]  animate-slideup  mt-[23px] flex   flex-col   items-center justify-center `}
     >
       <div className="w-[100px] h-[25px]  top-[-22px]  "></div>
       <div className=" absolute top-[-13px]">
@@ -63,7 +63,7 @@ function MoreMobile() {
         </div>
       </div>
       <Link
-        href={"/about_me"}
+        href={"#about_me"}
         className="w-full h-auto hover:bg-[#221d41] rounded-[8px] flex flex-row py-[13px] px-[5px] "
       >
         <div className=" flex flex-col">

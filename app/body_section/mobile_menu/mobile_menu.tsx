@@ -78,7 +78,7 @@ function MobileMenu() {
         </div>
       </div>
       <Link
-        href={"/Project"}
+        href={"#projects"}
         className=" w-full min-h-[50px] rounded-[10px] border
              hover:border-sky-500  border-[#7042f861] mt-[15px] flex flex-row  items-center font-semibold justify-center  "
       >

@@ -1,15 +1,4 @@
-declare module "maath/random/dist/maath-random.esm" {
-  // Add your type definitions here
-  // For example:
-  export function getRandomNumber(): number;
-}
-
-interface Skill_data {
-  skill_name: string;
-  Image: string;
-  width: number;
-  hight: number;
-}
+declare module "maath/random/dist/maath-random.esm" {}
 
 interface Project_data {
   title: string;
@@ -33,11 +22,3 @@ interface Project_data {
   indevelopment: boolean;
 }
 
-interface Link {
-  You_tube: string;
-  Github: string;
-  Dowload: string;
-}
-
-
-checkFields<any>()

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Technology_tag from "../technology_tag";
 import { useDispatch } from "react-redux";
 import { set_Image_src } from "../../../redux_store/redux_action";
@@ -57,15 +56,13 @@ function Projectcard_Mobile({ data, index }: Props) {
           ))}
         </div>
 
-        <Link href={`/project/${data.video_key}`}>
-          <div className="w-full h-auto mt-[10px] text-white">
-            <span className="font-bold text-[18px]">{data.title}</span>
-          </div>
-          <div className="w-full h-auto">
-            <span className="text-[14px] text-gray-400">{data.project_blog}</span>
-          </div>
-          <Technology_tag data={data} />
-        </Link>
+        <div className="w-full h-auto mt-[10px] text-white">
+          <span className="font-bold text-[18px]">{data.title}</span>
+        </div>
+        <div className="w-full h-auto">
+          <span className="text-[14px] text-gray-400">{data.project_blog}</span>
+        </div>
+        <Technology_tag data={data} />
       </div>
     </div>
   );
