@@ -20,65 +20,65 @@ const categories: Category[] = [
   {
     title: "Frontend",
     skills: [
-      { name: "TypeScript",   icon: "/skills/TypeScript.svg" },
-      { name: "JavaScript",   icon: "/skills/JavaScript.svg" },
-      { name: "React",        icon: "/skills/React.svg" },
-      { name: "Next.js",      icon: "/skills/NextJS.svg" },
-      { name: "HTML5",        icon: "/skills/HTML.svg" },
-      { name: "CSS3",         icon: "/skills/CSS.svg" },
+      { name: "TypeScript", icon: "/skills/TypeScript.svg" },
+      { name: "JavaScript", icon: "/skills/JavaScript.svg" },
+      { name: "React", icon: "/skills/React.svg" },
+      { name: "Next.js", icon: "/skills/NextJS.svg" },
+      { name: "HTML5", icon: "/skills/HTML.svg" },
+      { name: "CSS3", icon: "/skills/CSS.svg" },
       { name: "Tailwind CSS", icon: "/skills/Tailwind.svg" },
-      { name: "Redux",        icon: "/skills/Redux.svg" },
-      { name: "Material UI",  icon: "/skills/MaterialUI.svg" },
+      { name: "Redux", icon: "/skills/Redux.svg" },
+      { name: "Material UI", icon: "/skills/MaterialUI.svg" },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "NestJS",      icon: "/skills/NestJS.svg" },
-      { name: "Node.js",     icon: "/skills/NodeJS.svg" },
-      { name: "Express.js",  icon: "/skills/ExpressJS.svg" },
-      { name: "PostgreSQL",  icon: "/skills/PostgreSQL.svg" },
-      { name: "MongoDB",     icon: "/skills/MongoDB.svg" },
-      { name: "GraphQL",     icon: "/skills/GraphQL.svg" },
-      { name: "Prisma",      icon: "/skills/Prisma.svg" },
-      { name: "Redis",       icon: "/skills/Redis.svg" },
-      { name: "Kafka",       icon: "/skills/Kafka.svg" },
-      { name: "RabbitMQ",    icon: "/skills/RabbitMQ.svg" },
-      { name: "Firebase",    icon: "/skills/Firebase.svg" },
+      { name: "NestJS", icon: "/skills/NestJS.svg" },
+      { name: "Node.js", icon: "/skills/NodeJS.svg" },
+      { name: "Express.js", icon: "/skills/ExpressJS.svg" },
+      { name: "PostgreSQL", icon: "/skills/PostgreSQL.svg" },
+      { name: "MongoDB", icon: "/skills/MongoDB.svg" },
+      { name: "GraphQL", icon: "/skills/GraphQL.svg" },
+      { name: "Prisma", icon: "/skills/Prisma.svg" },
+      { name: "Redis", icon: "/skills/Redis.svg" },
+      { name: "Kafka", icon: "/skills/Kafka.svg" },
+      { name: "RabbitMQ", icon: "/skills/RabbitMQ.svg" },
+      { name: "Firebase", icon: "/skills/Firebase.svg" },
     ],
   },
   {
     title: "Cloud & DevOps",
     skills: [
-      { name: "AWS",             icon: "/skills/AWS.svg" },
-      { name: "GCP",             icon: "/skills/GCP.svg" },
-      { name: "Docker",          icon: "/skills/Docker.svg" },
-      { name: "Kubernetes",      icon: "/skills/Kubernetes.svg" },
-      { name: "Linux",           icon: "/skills/Linux.svg" },
-      { name: "Nginx",           icon: "/skills/Nginx.svg" },
-      { name: "Terraform",       icon: "/skills/Terraform.svg" },
-      { name: "GitHub Actions",  icon: "/skills/GithubActions.svg" },
-      { name: "Grafana",         icon: "/skills/Grafana.svg" },
-      { name: "Prometheus",      icon: "/skills/Prometheus.svg" },
+      { name: "AWS", icon: "/skills/AWS.svg" },
+      { name: "GCP", icon: "/skills/GCP.svg" },
+      { name: "Docker", icon: "/skills/Docker.svg" },
+      { name: "Kubernetes", icon: "/skills/Kubernetes.svg" },
+      { name: "Linux", icon: "/skills/Linux.svg" },
+      { name: "Nginx", icon: "/skills/Nginx.svg" },
+      { name: "Terraform", icon: "/skills/Terraform.svg" },
+      { name: "GitHub Actions", icon: "/skills/GithubActions.svg" },
+      { name: "Grafana", icon: "/skills/Grafana.svg" },
+      { name: "Prometheus", icon: "/skills/Prometheus.svg" },
     ],
   },
   {
     title: "Tools & CI/CD",
     skills: [
-      { name: "Git",    icon: "/skills/Git.svg" },
+      { name: "Git", icon: "/skills/Git.svg" },
       { name: "GitHub", icon: "/skills/Github.svg" },
       { name: "GitLab", icon: "/skills/GitLab.svg" },
-      { name: "Jest",   icon: "/skills/Jest.svg" },
-      { name: "Bash",   icon: "/skills/Bash.svg" },
-      { name: "npm",    icon: "/skills/Npm.svg" },
-      { name: "Figma",  icon: "/skills/Figma.svg" },
+      { name: "Jest", icon: "/skills/Jest.svg" },
+      { name: "Bash", icon: "/skills/Bash.svg" },
+      { name: "npm", icon: "/skills/Npm.svg" },
+      { name: "Figma", icon: "/skills/Figma.svg" },
     ],
   },
   {
     title: "Currently Learning",
     skills: [
-      { name: "C#",     icon: "/skills/CSharp.svg" },
-      { name: ".NET",   icon: "/skills/DotNet.svg" },
+      { name: "C#", icon: "/skills/CSharp.svg" },
+      { name: ".NET", icon: "/skills/DotNet.svg" },
     ],
   },
 ];
@@ -102,8 +102,7 @@ function SkillPill({ name, icon }: Skill) {
 
 function Section_4() {
   return (
-    <section className="w-full 1300:w-[1250px] relative overflow-hidden flex flex-col items-center justify-center m-auto py-[60px]">
-
+    <section className="w-full 1300:w-[1250px] relative overflow-hidden flex flex-col items-center  justify-start  m-auto top-[15px] ">
       {/* Section header */}
       <div className="flex flex-col items-center justify-center mb-[44px]">
         <motion.div

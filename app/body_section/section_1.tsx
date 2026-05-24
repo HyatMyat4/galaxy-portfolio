@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
-import { Image_src_data, MobileMenu_data } from "../../redux_store/redux_action";
+import {
+  Image_src_data,
+  MobileMenu_data,
+} from "../../redux_store/redux_action";
 import { useSelector, useDispatch } from "react-redux";
 import Scale_Image from "./scale_img/scale_image";
 import { useEffect } from "react";
@@ -38,7 +41,7 @@ function Section_1() {
   }, []);
 
   return (
-    <section className=" w-full h-[940px] shadow-lg shadow-[#030014]/50  relative bg-[url('/main.svg')] bg-cover flex flex-col overflow-hidden  items-center justify-start  px-[15px] ">
+    <section className=" w-full h-[840px] shadow-lg shadow-[#030014]/50  relative bg-[url('/main.svg')] bg-cover flex flex-col overflow-hidden  items-center justify-start  px-[15px] ">
       <div className=" w-[1250px]  h-full z-[-10] absolute   top-[-280px]  flex flex-row   items-start justify-center ">
         <video
           className="w-full h-auto  rotate-180  "

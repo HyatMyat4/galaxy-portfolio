@@ -8,7 +8,9 @@ import Projectcard_Mobile from "./project_card/project_card_mobile";
 function Section_5() {
   return (
     <div className=" w-full 1300:w-[1250px] z-10 h-auto relative m-auto flex flex-col items-center justify-center overflow-hidden  pb-[100px] scroll-mt-[80px] ">
-      <span id="projects" className="sr-only">&nbsp;</span>
+      <span id="projects" className="sr-only">
+        &nbsp;
+      </span>
       <div className=" w-full 840:w-[830px] 1250:w-full h-auto flex flex-col  items-start justify-center my-[15px] px-[15px] 1300:px-[10px] ">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500  font-semibold text-[20px] ">
           Projects
@@ -31,7 +33,7 @@ function Section_5() {
               index={index}
               data={data}
             />
-          )
+          ),
         )}
         <div className=" w-full 840:w-[800px] 1250:w-full flex flex-col 1250:flex-row h-auto p-0 1250:p-[10px] animate-slideup ">
           <div

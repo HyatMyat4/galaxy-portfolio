@@ -21,7 +21,7 @@ const experience = {
 
 function Section_3() {
   return (
-    <section className="w-full flex flex-col items-center justify-center overflow-hidden py-[60px] relative">
+    <section className="w-full flex flex-col items-center justify-start pt-[35px] overflow-hidden  relative">
       <div className="w-full 1300:w-[1250px] px-[15px] 1300:px-0">
         <div className="flex flex-col items-center justify-center mb-[40px]">
           <motion.div
@@ -69,7 +69,10 @@ function Section_3() {
             <div className="w-full h-[1px] bg-gradient-to-r from-purple-500/30 to-cyan-500/30 mb-[16px]" />
             <ul className="space-y-[10px]">
               {experience.bullets.map((bullet, i) => (
-                <li key={i} className="flex items-start gap-[10px] text-slate-300 text-[14px] 600:text-[15px] leading-[1.6]">
+                <li
+                  key={i}
+                  className="flex items-start gap-[10px] text-slate-300 text-[14px] 600:text-[15px] leading-[1.6]"
+                >
                   <span className="text-purple-400 mt-[2px] shrink-0">▸</span>
                   {bullet}
                 </li>
@@ -79,7 +82,7 @@ function Section_3() {
         </div>
       </div>
 
-      <div className="w-[1500px] h-full z-[-10] absolute top-0 flex flex-row items-start justify-center opacity-20">
+      <div className="w-[1500px] h-full z-[-10] absolute top-[-80px] flex flex-row items-start justify-center opacity-20">
         <video
           className="w-full h-auto"
           preload="none"
