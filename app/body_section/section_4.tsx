@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import { fadeIn, textVariant } from "../../utils/motion";
+import { fadeIn, textVariant, staggerContainer } from "../../utils/motion";
 import { SectionWrapper } from "../hoc/index";
 
 interface Skill {
@@ -83,20 +83,31 @@ const categories: Category[] = [
   },
 ];
 
+const pillVariant = {
+  hidden: { opacity: 0, scale: 0.8 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: { type: "tween", duration: 0.35, ease: "easeOut" },
+  },
+};
+
 function SkillPill({ name, icon }: Skill) {
   return (
-    <div className="flex items-center gap-[8px] px-[12px] py-[8px] rounded-[8px] bg-[#080520] border border-[#2a1f4e] hover:border-[#7042f8]/50 hover:bg-[#0e0830] transition-all duration-200 cursor-default select-none">
-      <Image
-        src={icon}
-        alt={name}
-        width={20}
-        height={20}
-        className="w-[20px] h-[20px] object-contain shrink-0"
-      />
-      <span className="text-slate-300 text-[13px] leading-none whitespace-nowrap font-medium">
-        {name}
-      </span>
-    </div>
+    <motion.div variants={pillVariant}>
+      <div className="flex items-center gap-[8px] px-[12px] py-[8px] rounded-[8px] bg-[#080520] border border-[#2a1f4e] hover:border-[#7042f8]/50 hover:bg-[#0e0830] transition-all duration-200 cursor-default select-none">
+        <Image
+          src={icon}
+          alt={name}
+          width={20}
+          height={20}
+          className="w-[20px] h-[20px] object-contain shrink-0"
+        />
+        <span className="text-slate-300 text-[13px] leading-none whitespace-nowrap font-medium">
+          {name}
+        </span>
+      </div>
+    </motion.div>
   );
 }
 
@@ -152,11 +163,17 @@ function Section_4() {
             </div>
 
             {/* Skill pills */}
-            <div className="flex flex-wrap gap-[8px]">
+            <motion.div
+              variants={staggerContainer(0.05, 0)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              className="flex flex-wrap gap-[8px]"
+            >
               {cat.skills.map((skill) => (
                 <SkillPill key={skill.name} {...skill} />
               ))}
-            </div>
+            </motion.div>
           </motion.div>
         ))}
       </div>
