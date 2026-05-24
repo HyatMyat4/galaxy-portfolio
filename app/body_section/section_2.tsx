@@ -71,7 +71,10 @@ function Section_2() {
           variants={slideLeftVariant}
           href="#technical_skill"
           id="button-primary"
-          className=" px-[20px] py-[7px] text-white  cursor-pointer hover:scale-105 active:scale-90  transition-all   duration-150 select-none rounded-[5px]"
+          className=" px-[20px] py-[7px] text-white cursor-pointer will-change-transform
+             hover:scale-105 active:scale-95
+             transition-[transform,box-shadow] duration-150 ease-out
+             select-none rounded-[5px]"
         >
           Explore My Work
         </motion.a>
