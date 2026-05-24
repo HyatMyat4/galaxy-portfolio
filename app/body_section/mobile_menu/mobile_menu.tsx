@@ -77,8 +77,8 @@ function MobileMenu() {
           </div>
         </div>
       </div>
-      <a
-        href="#projects"
+      <Link
+        href={"/Project"}
         className=" w-full min-h-[50px] rounded-[10px] border
              hover:border-sky-500  border-[#7042f861] mt-[15px] flex flex-row  items-center font-semibold justify-center  "
       >
@@ -97,7 +97,7 @@ function MobileMenu() {
             d="M17 8l4 4m0 0l-4 4m4-4H3"
           />
         </svg>
-      </a>
+      </Link>
       <div
         className=" w-full min-h-[50px] rounded-[10px] border pl-[25px]
              hover:border-sky-500  border-[#7042f861] mt-[15px] flex flex-row  text-gray-200 items-center font-semibold justify-center "
