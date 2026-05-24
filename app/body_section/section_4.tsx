@@ -167,7 +167,7 @@ function Section_4() {
               variants={staggerContainer(0.05, 0)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
               className="flex flex-wrap gap-[8px]"
             >
               {cat.skills.map((skill) => (

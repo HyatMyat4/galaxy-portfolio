@@ -2,13 +2,37 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { slideIn } from "../../utils/motion";
+import { staggerContainer } from "../../utils/motion";
 import { SectionWrapper } from "../hoc/index";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import { fadeIn, textVariant } from "../../utils/motion";
+import { textVariant } from "../../utils/motion";
+const slideLeftVariant = {
+  hidden: { opacity: 0, x: -250 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "tween", duration: 1, ease: "easeOut" },
+  },
+};
+
+const slideRightVariant = {
+  hidden: { opacity: 0, x: 500 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "tween", duration: 1.3, ease: "easeOut" },
+  },
+};
+
 function Section_2() {
   return (
-    <div className=" 1300 1300:w-[1250px] h-full  flex flex-row items-center justify-between z-[-10] mt-[80px] 500:mt-0  ">
+    <motion.div
+      variants={staggerContainer(0.2, 0.3)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.1 }}
+      className=" 1300 1300:w-[1250px] h-full  flex flex-row items-center justify-between z-[-10] mt-[80px] 500:mt-0  "
+    >
       <div
         className=" w-full 800:w-[90%] 1000:w-[70%] 1140:w-[50%] h-full flex flex-col items-center  1140:items-start  justify-center m-auto
        text-center 1140:text-start"
@@ -26,31 +50,32 @@ function Section_2() {
             Senior Full-Stack Engineer at Innorder
           </div>
         </motion.div>
-        <div className="  w-auto h-auto  animate-slideleftT2 mt-[24px] text-white  ">
+        <motion.div variants={slideLeftVariant} className="  w-auto h-auto mt-[24px] text-white  ">
           <span className=" text-[40px] 400:text-[50px]  800:text-[57px] font-bold align-top ">
             Building{" "}
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               scalable &
             </span>{" "}
           </span>
-          <span className=" translate-y-[-20px]  animate-slideleftT2 text-[40px] 400:text-[50px]  800:text-[57px] font-bold   align-top ">
+          <span className=" translate-y-[-20px] text-[40px] 400:text-[50px]  800:text-[57px] font-bold   align-top ">
             impactful products
           </span>
-        </div>
-        <p className=" animate-slideleftT3 text-[16px] 400:text-[19px] text-slate-400 mb-[20px]  ">
+        </motion.div>
+        <motion.p variants={slideLeftVariant} className=" text-[16px] 400:text-[19px] text-slate-400 mb-[20px]  ">
           Full-stack engineer with 4+ years of experience at Innorder. Focused
           on <a className="Home_a ">React</a>,<a className="Home_a">Next.js</a>,
           <a className="Home_a">NestJS</a>, clean architecture, and
           production-ready code that creates real-world value.
-        </p>
-        <a
+        </motion.p>
+        <motion.a
+          variants={slideLeftVariant}
           href="#technical_skill"
           id="button-primary"
-          className=" animate-slideleftT4 px-[20px] py-[7px] text-white  cursor-pointer hover:scale-105 active:scale-90  transition-all   duration-150 select-none rounded-[5px]"
+          className=" px-[20px] py-[7px] text-white  cursor-pointer hover:scale-105 active:scale-90  transition-all   duration-150 select-none rounded-[5px]"
         >
           Explore My Work
-        </a>
-        <div className="animate-slideleftT4 flex flex-row items-center justify-center 1140:justify-start flex-wrap gap-x-[20px] gap-y-[8px] mt-[18px]">
+        </motion.a>
+        <motion.div variants={slideLeftVariant} className="flex flex-row items-center justify-center 1140:justify-start flex-wrap gap-x-[20px] gap-y-[8px] mt-[18px]">
           <a
             href="mailto:hyatmyat79@gmail.com"
             className="flex items-center gap-[6px] text-slate-400 hover:text-slate-200 text-[13px] transition-colors duration-150"
@@ -106,18 +131,18 @@ function Section_2() {
             GitHub
           </a>
           <span className="text-slate-500 text-[13px]">· Myanmar</span>
-        </div>
+        </motion.div>
       </div>
-      <div className=" w-[50%] h-full hidden 1140:flex flex-row items-center  select-none justify-between ">
+      <motion.div variants={slideRightVariant} className=" w-[45%] h-full hidden 1140:flex flex-row items-center  select-none justify-center ">
         <Image
           src="/mainIconsdark.svg"
-          width={708}
-          height={709}
+          width={500}
+          height={500}
           alt=""
-          className="   flex animate-slideright2  transition_"
+          className="w-[85%] h-auto flex transition_"
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

@@ -9,7 +9,7 @@ const SectionWrapper = (Component: React.JSX.Element | any, idName: string) =>
         variants={staggerContainer("", 0)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: false, amount: 0.25 }}
         className={``}
       >
         <span id={idName}>&nbsp;</span>
