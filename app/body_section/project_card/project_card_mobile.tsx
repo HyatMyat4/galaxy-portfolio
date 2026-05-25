@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Technology_tag from "../technology_tag";
 import { useAppContext } from "../../context/AppContext";
+import { toSlug } from "../../../utils/slug";
 
 interface Props {
   data: Project_data;
@@ -14,7 +16,10 @@ function Projectcard_Mobile({ data, index }: Props) {
   const images = data.project_Img_Mobile || [];
 
   return (
-    <div className="w-full 840:w-[800px] 1250:w-full h-auto p-[10px] animate-slideup group">
+    <Link
+      href={`/project/${toSlug(data.title)}`}
+      className="w-full 840:w-[800px] 1250:w-full h-auto p-[10px] animate-slideup group block"
+    >
       <div className="relative w-full h-auto rounded-[16px] overflow-hidden bg-[#0a0620]/80 hover:bg-[#0d082b]/90 border border-[#1f0f4a]/60 hover:border-[#7c3aed]/30 transition-all duration-500 ease-out p-[1px]">
         {/* Gradient border glow on hover */}
         <div className="absolute inset-0 rounded-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-[#7c3aed]/20 via-transparent to-[#06b6d4]/10 pointer-events-none" />
@@ -45,12 +50,14 @@ function Projectcard_Mobile({ data, index }: Props) {
                     }`}
                   >
                     <div
-                      onClick={() =>
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
                         dispatch({
                           type: "SET_IMAGE_SRC",
                           payload: { data: imgSrc, isMobile: true },
-                        })
-                      }
+                        });
+                      }}
                       className="absolute inset-0 z-10 bg-black/0 group-hover/image:bg-black/20 transition-all duration-300 cursor-pointer"
                     />
                     <Image
@@ -84,7 +91,7 @@ function Projectcard_Mobile({ data, index }: Props) {
           {/* Description */}
           <div className="w-full h-auto mb-[6px]">
             <p className="text-[13px] text-white/50 leading-relaxed">
-              {data.project_blog}
+              {data.description}
             </p>
           </div>
 
@@ -92,7 +99,7 @@ function Projectcard_Mobile({ data, index }: Props) {
           <Technology_tag data={data} />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

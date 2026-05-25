@@ -1,5 +1,6 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
   { href: "#about_me", label: "About Me" },
@@ -9,12 +10,22 @@ const NAV_ITEMS = [
 ];
 
 function Navbar() {
+  const pathname = usePathname();
+  const isProjectPage = pathname.startsWith("/project/");
   const [activeId, setActiveId] = useState("");
   const [clickedId, setClickedId] = useState<string | null>(null);
+  const clickLockRef = useRef(false);
 
   const handleClick = useCallback((id: string) => {
+    clickLockRef.current = true;
     setClickedId(id);
+    setActiveId(id);
     setTimeout(() => setClickedId(null), 200);
+    // Keep the lock for 1.5s so the user clearly sees the active state
+    // before the IntersectionObserver takes over again
+    setTimeout(() => {
+      clickLockRef.current = false;
+    }, 1500);
   }, []);
 
   useEffect(() => {
@@ -30,6 +41,7 @@ function Navbar() {
 
     const observer = new IntersectionObserver(
       (entries) => {
+        if (clickLockRef.current) return;
         const visible = entries
           .filter((e) => e.isIntersecting)
           .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
@@ -44,6 +56,17 @@ function Navbar() {
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const onHashChange = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) setActiveId(hash);
+    };
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
+
+  if (isProjectPage) return null;
 
   return (
     <div className="w-full h-[65px] fixed shadow-lg shadow-[#2A0E61]/50 bg-slate-3

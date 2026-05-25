@@ -2,9 +2,8 @@ export const Project: Project_data[] = [
   {
     title: "Modern Next.js 13 Portfolio",
     video_key: "HvkrAjHJ-38",
-    say_xi: "Have a great day!",
-    say_xi_blog:
-      "My portfolio project built with Next.js 13 — featuring a clean UI, basic animations, and authentication.",
+    description:
+      "My portfolio project built with Next.js 13 — featuring a clean UI, basic animations, and authentication. Contains star mode, Google/Facebook/GitHub/Instagram authentication, custom star color, basic Framer Motion animations, and embedded YouTube video.",
     technology_feature: [
       "Tailwind",
       "React",
@@ -34,8 +33,6 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/HyatMyat_Profiol/archive/refs/heads/main.zip",
     backend_dowload_link: "",
     project_image: "/projects-images/nextjs-profiol.png",
-    project_blog:
-      "Contain StarMode , Authentication Google , Facebook , Github , Instgram , Custom Star Colour Basic Animation With Fraimer Motion",
     Type: "Next js 13",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -43,9 +40,8 @@ export const Project: Project_data[] = [
   {
     title: "Shoe E-Commerce & Admin Dashboard",
     video_key: "v3LJMcWbcDQ",
-    say_xi: "Hello, my friends!",
-    say_xi_blog:
-      "A full-stack responsive shoe e-commerce and admin dashboard. I gained extensive experience with complex UI, authentication, and CRUD operations.",
+    description:
+      "A full-stack responsive shoe e-commerce and admin dashboard. I gained extensive experience with complex UI, authentication, and CRUD operations. User can order with real-world Stripe payment. Admin can manage products, promotions, users, and view charts.",
     technology_feature: [
       "Tailwind",
       "React",
@@ -96,8 +92,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/Nike_Backend/archive/refs/heads/main.zip",
     project_image: "/projects-images/shoe-ecommerce.png",
-    project_blog:
-      "A Real Time Full Stack Shoe Ecommerce & Admin Dashboard application User Can Order and Contain Real World Payment For Stripe",
     Type: "Next js 13",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -105,9 +99,8 @@ export const Project: Project_data[] = [
   {
     title: "Admin Dashboard Web App",
     video_key: "yF1oJ7wzvWY",
-    say_xi: "Responsive food ordering project",
-    say_xi_blog:
-      "Food ordering project with a GraphQL server, user authentication, CRUD operations, and social login integration.",
+    description:
+      "Food ordering project with a GraphQL server, user authentication, CRUD operations, and social login integration. A Real Time Full Stack FoodOrder & Admin Dashboard application User Can Order and Contain Payment For Stripe And AdminDashBoard Feature Admin can make Product CRUD and",
     technology_feature: [
       "Tailwind",
       "React",
@@ -159,8 +152,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/DeshboardBackend/archive/refs/heads/main.zip",
     project_image: "/projects-images/admin-dashboard-food.png",
-    project_blog:
-      "A Real Time Full Stack FoodOrder & Admin Dashboard application User Can Order and Contain Payment For Stripe And AdminDashBoard Feature Admin can make Product CRUD and",
     Type: "Next js 13",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -168,9 +159,8 @@ export const Project: Project_data[] = [
   {
     title: "Deliveroo Mobile App",
     video_key: "AxQ_Eli8gtk",
-    say_xi: "My first mobile app",
-    say_xi_blog:
-      "A React Native project built with Expo CLI, featuring Google authentication, REST API integration, and Google Maps functionality.",
+    description:
+      "A React Native project built with Expo CLI, featuring Google authentication, REST API integration, and Google Maps functionality. It My First ReactNative App So The have a lot of Bug!, Feature Conatin Google Auth UserCanOrder Remove Order And Containe ReactNativeMap Justlike Deliveroo",
     technology_feature: [
       "Tailwind",
       "React Native",
@@ -212,8 +202,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/Deliveroo/archive/refs/heads/main.zip",
     project_image: "",
-    project_blog:
-      "It My First ReactNative App So The have a lot of Bug!, Feature Conatin Google Auth UserCanOrder Remove Order And Containe ReactNativeMap Justlike Deliveroo",
     Type: "React Native",
     project_Img_Mobile: [
       "/projects-images/deliveroo-1.jpg",
@@ -228,9 +216,8 @@ export const Project: Project_data[] = [
   {
     title: "Full-Stack Food Ordering Website",
     video_key: "yF1oJ7wzvWY",
-    say_xi: "Responsive food ordering project",
-    say_xi_blog:
-      "Food ordering project with a GraphQL server, user authentication, CRUD operations, and social login integration.",
+    description:
+      "Food ordering project with a GraphQL server, user authentication, CRUD operations, and social login integration. A Real Time Full Stack FoodOrder & Admin Dashboard application User Can Order and Contain Payment For Stripe And AdminDashBoard Feature Admin can make Product CRUD and",
     technology_feature: [
       "Tailwind",
       "React",
@@ -282,8 +269,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/DeshboardBackend/archive/refs/heads/main.zip",
     project_image: "/projects-images/food-order.png",
-    project_blog:
-      "A Real Time Full Stack FoodOrder & Admin Dashboard application User Can Order and Contain Payment For Stripe And AdminDashBoard Feature Admin can make Product CRUD and",
     Type: "Next js 13",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -292,9 +277,8 @@ export const Project: Project_data[] = [
   {
     title: "Full-Stack AI ChatGPT Clone",
     video_key: "R90bxY4UwPg",
-    say_xi: "Hello, my friends!",
-    say_xi_blog:
-      "My first AI project — data comes from the OpenAI API. Ask questions just like in the real ChatGPT.",
+    description:
+      "My first AI project — data comes from the OpenAI API. Ask questions just like in the real ChatGPT. A Real Time You Can Ask any thing & you can create new chat delete chat & Clear conversations Feature and google , microsoft Auth",
     technology_feature: [
       "html",
       "css",
@@ -330,8 +314,6 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/Chat_GPT4/archive/refs/heads/main.zip",
     backend_dowload_link: "",
     project_image: "/projects-images/chatgpt-clone.png",
-    project_blog:
-      "A Real Time You Can Ask any thing & you can create new chat delete chat & Clear conversations Feature and google , microsoft Auth",
     Type: "Next js 13",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -339,9 +321,8 @@ export const Project: Project_data[] = [
   {
     title: "Nike Admin Dashboard Web App",
     video_key: "v3LJMcWbcDQ",
-    say_xi: "Hello, my friends!",
-    say_xi_blog:
-      "A full-stack responsive shoe e-commerce and admin dashboard. I gained extensive experience with complex UI, authentication, and CRUD operations.",
+    description:
+      "A full-stack responsive shoe e-commerce and admin dashboard. I gained extensive experience with complex UI, authentication, and CRUD operations. A Real Time Full Stack Shoe Ecommerce & Admin Dashboard application User Can Order and Contain Real World Payment For Stripe",
     technology_feature: [
       "Tailwind",
       "React",
@@ -392,8 +373,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/Nike_Backend/archive/refs/heads/main.zip",
     project_image: "/projects-images/nike-dashboard.png",
-    project_blog:
-      "A Real Time Full Stack Shoe Ecommerce & Admin Dashboard application User Can Order and Contain Real World Payment For Stripe",
     Type: "Next js 13",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -401,9 +380,8 @@ export const Project: Project_data[] = [
   {
     title: "Modern Three.js Portfolio",
     video_key: "6wzf2ho-kzI",
-    say_xi: "Hello, my friend!",
-    say_xi_blog:
-      "A responsive 3.js portfolio website with star mode, background music, light/dark mode, embedded YouTube videos, and a mobile-responsive layout built with Vite.",
+    description:
+      "A responsive 3.js portfolio website with star mode, background music, light/dark mode, embedded YouTube videos, and a mobile-responsive layout built with Vite. Morden Profiol Wbsite With Javascript | React | Tailwind css | Responsive Website profiol desing.",
     technology_feature: [
       "html",
       "css",
@@ -443,8 +421,6 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/Profiol_2/archive/refs/heads/main.zip",
     backend_dowload_link: "",
     project_image: "/projects-images/threejs-profiol.png",
-    project_blog:
-      "Morden Profiol Wbsite With Javascript | React | Tailwind css | Responsive Website profiol desing.",
     Type: "React",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -452,8 +428,8 @@ export const Project: Project_data[] = [
   {
     title: "ApexLegends.com Clone",
     video_key: "IqYbA6ZZ-e4",
-    say_xi: "Have a great day!",
-    say_xi_blog: "A clone of my favorite game website, Apex Legends — rebuilt from scratch.",
+    description:
+      "A clone of my favorite game website, Apex Legends — rebuilt from scratch. Simple ApexLegnds Game Web application DropDown Feature Complex Responsive",
     technology_feature: [
       "html",
       "css",
@@ -484,8 +460,6 @@ export const Project: Project_data[] = [
       "https://github.com/HyatMyat4/ApexLegends.com/archive/refs/heads/main.zip",
     backend_dowload_link: "",
     project_image: "/projects-images/apex-legends.png",
-    project_blog:
-      "Simple ApexLegnds Game Web application DropDown Feature Complex Responsive",
     Type: "Next js 13",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -493,9 +467,8 @@ export const Project: Project_data[] = [
   {
     title: "Full-Stack Social Media App",
     video_key: "cLKsNVSyPMM",
-    say_xi: "Hello, my friends!",
-    say_xi_blog:
-      "A full-stack social media project built with React, Tailwind CSS, and my first Node.js Express server.",
+    description:
+      "A full-stack social media project built with React, Tailwind CSS, and my first Node.js Express server. A Real Time Full Stack SocalMedia application User Can Upload Post With Image , User Can Make Post CRUD Operations & Reaction Feature , Comment CRUD & Contain User Profile CRUD and Friends Add , Remove RealTime Messanger Can send Image,Link,Text",
     technology_feature: [
       "html",
       "css",
@@ -537,8 +510,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/SocialMediaBackend-/archive/refs/heads/main.zip",
     project_image: "/projects-images/social-media.png",
-    project_blog:
-      "A Real Time Full Stack SocalMedia application User Can Upload Post With Image , User Can Make Post CRUD Operations & Reaction Feature , Comment CRUD & Contain User Profile CRUD and Friends Add , Remove RealTime Messanger Can send Image,Link,Text",
     Type: "React",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -546,8 +517,8 @@ export const Project: Project_data[] = [
   {
     title: "Shoe E-Commerce Server",
     video_key: "",
-    say_xi: "",
-    say_xi_blog: "",
+    description:
+      "User authentication Google auth , Facebook auth , Nike Auth ..more , Mind leven CRUD functionality",
     technology_feature: [
       "Node js",
       "Express js",
@@ -567,8 +538,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/Nike_Backend/archive/refs/heads/main.zip",
     project_image: "/projects-images/server-project.png",
-    project_blog:
-      " User authentication Google auth , Facebook auth , Nike Auth ..more , Mind leven CRUD functionality",
     Type: "server",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -576,8 +545,8 @@ export const Project: Project_data[] = [
   {
     title: "Food Order & Admin Dashboard Server",
     video_key: "",
-    say_xi: "",
-    say_xi_blog: "",
+    description:
+      "User authentication , Graphql  Mind leven CRUD functionality , Google auth , Facebook auth , Fastfood Auth,",
     technology_feature: [
       "Node js",
       "Express js",
@@ -598,8 +567,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/DeshboardBackend/archive/refs/heads/main.zip",
     project_image: "/projects-images/server-project.png",
-    project_blog:
-      "User authentication , Graphql  Mind leven CRUD functionality , Google auth , Facebook auth , Fastfood Auth,",
     Type: "server",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -607,8 +574,8 @@ export const Project: Project_data[] = [
   {
     title: "Deliveroo Server",
     video_key: "",
-    say_xi: "",
-    say_xi_blog: "",
+    description:
+      "Node js Express With Postger Sql ,FireBase FireStore  CRUD functionality",
     technology_feature: [
       "Node js",
       "Express js",
@@ -628,8 +595,6 @@ export const Project: Project_data[] = [
     backend_dowload_link:
       "https://github.com/HyatMyat4/Deliveroo/archive/refs/heads/main.zip",
     project_image: "/projects-images/server-project.png",
-    project_blog:
-      "Node js Express With Postger Sql ,FireBase FireStore  CRUD functionality",
     Type: "server",
     indevelopment: false,
     dateAgo: "3 years ago",
@@ -640,8 +605,7 @@ export const Project: Project_data[] = [
   {
     title: "",
     video_key: "",
-    say_xi: "",
-    say_xi_blog: "",
+    description: "",
     technology_feature: [],
     about_this_app: "",
     design_blog: "",
@@ -653,7 +617,6 @@ export const Project: Project_data[] = [
     frontend_dowload_link: "",
     backend_dowload_link: "",
     project_image: "",
-    project_blog: "",
     Type: "Next js 13",
     indevelopment: false,
     dateAgo: "",

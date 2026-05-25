@@ -8,7 +8,7 @@
   }
   .Nav_text.active {
     @apply text-white;
-    text-shadow: 0 0 10px rgba(167, 139, 250, 0.8);
+    text-shadow: 0 0 20px rgba(167, 139, 250, 1), 0 0 40px rgba(139, 92, 246, 0.6);
   }
   .Home_a {
     @apply text-sky-400 hover:underline cursor-pointer underline-offset-4  mx-[2px];
@@ -17,7 +17,7 @@
     @apply transition-all  duration-700;
   }
   .tag {
-    @apply px-[13px] py-[3px] rounded-[7px] font-semibold text-[14px] mr-[10px] mb-[10px];
+    @apply px-[10px] py-[2px] rounded-[5px] font-semibold text-[12px] mr-[6px] mb-[4px];
   }
 }
 

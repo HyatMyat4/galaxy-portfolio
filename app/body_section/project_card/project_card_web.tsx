@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Technology_tag from "../technology_tag";
 import { useAppContext } from "../../context/AppContext";
+import { toSlug } from "../../../utils/slug";
 
 interface Props {
   data: Project_data;
@@ -12,7 +14,10 @@ interface Props {
 function Projectcard_Web({ data, index }: Props) {
   const { dispatch } = useAppContext();
   return (
-    <div className="w-auto h-auto mb-[20px] 840:mb-0 group">
+    <Link
+      href={`/project/${toSlug(data.title)}`}
+      className="w-auto h-auto mb-[20px] 840:mb-0 group block"
+    >
       <div className={`relative w-full 840:w-[800px] 1250:w-[390px] rounded-[16px] overflow-hidden backdrop-blur-sm m-0 840:m-[10px] bg-[#0a0620]/80 hover:bg-[#0d082b]/90 border border-[#1f0f4a]/60 hover:border-[#7c3aed]/30 transition-all duration-500 ease-out p-[1px] ${data.Type !== "server" ? "1250:h-[440px]" : "h-auto"}`}>
         {/* Gradient border glow on hover */}
         <div className="absolute inset-0 rounded-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-[#7c3aed]/20 via-transparent to-[#06b6d4]/10 pointer-events-none" />
@@ -32,12 +37,14 @@ function Projectcard_Web({ data, index }: Props) {
           {data.Type !== "server" && data.project_image && (
             <div className="rounded-[10px] overflow-hidden mb-[14px] relative group/image cursor-pointer aspect-video flex-shrink-0">
               <div
-                onClick={() =>
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
                   dispatch({
                     type: "SET_IMAGE_SRC",
                     payload: { data: data?.project_image, isMobile: false },
-                  })
-                }
+                  });
+                }}
                 className="absolute inset-0 z-10 bg-black/0 group-hover/image:bg-black/20 transition-all duration-300"
               />
               <Image
@@ -73,7 +80,7 @@ function Projectcard_Web({ data, index }: Props) {
           {/* Description */}
           <div className="w-full h-auto mb-auto">
             <p className="text-[13px] text-white/50 leading-relaxed line-clamp-2">
-              {data.project_blog.slice(0, 110)}{data.project_blog.length > 110 ? "..." : ""}
+              {data.description.slice(0, 110)}{data.description.length > 110 ? "..." : ""}
             </p>
           </div>
 
@@ -83,7 +90,7 @@ function Projectcard_Web({ data, index }: Props) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
