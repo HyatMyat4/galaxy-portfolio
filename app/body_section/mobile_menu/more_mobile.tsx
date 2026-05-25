@@ -1,34 +1,28 @@
 "use client";
 import React from "react";
 import ChooseColour from "../../nav_components/choose_colour";
-import { useDispatch, useSelector } from "react-redux";
 import Link from "next/link";
-import {
-  setStarMode,
-  StarMode_data,
-  setStarColur,
-  StarColur_data,
-} from "../../../redux_store/redux_action";
+import { useAppContext } from "../../context/AppContext";
 
 function MoreMobile() {
-  const starmode = useSelector(StarMode_data);
-  const colour = useSelector(StarColur_data);
-  const dispatch = useDispatch();
+  const { state, dispatch } = useAppContext();
+  const starmode = state.StarMode;
+  const colour = state.StarColur;
 
   const StarModeStatus = () => {
     const status = localStorage.getItem("starMode");
 
     if (status === "active") {
-      dispatch(setStarMode("disable"));
+      dispatch({ type: "SET_STAR_MODE", payload: "disable" });
       localStorage.setItem("starMode", "disable");
     } else {
-      dispatch(setStarMode("active"));
+      dispatch({ type: "SET_STAR_MODE", payload: "active" });
       localStorage.setItem("starMode", "active");
     }
   };
 
   const onColourChange = (e: string) => {
-    dispatch(setStarColur(e));
+    dispatch({ type: "SET_STAR_COLUR", payload: e });
     localStorage.setItem("colour", e);
   };
 

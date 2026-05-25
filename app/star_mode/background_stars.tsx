@@ -4,11 +4,11 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import * as THREE from "three";
-import { useSelector } from "react-redux";
-import { StarMode_data, StarColur_data } from "../../redux_store/redux_action";
+import { useAppContext } from "../context/AppContext";
 
 function Background_Stars(props: any) {
-  const defaultColour = useSelector(StarColur_data);
+  const { state } = useAppContext();
+  const defaultColour = state.StarColur;
   const ref: any = useRef();
   const targetColor = useRef(new THREE.Color("#c2410c"));
   const sphere = useMemo(
@@ -59,7 +59,8 @@ function Background_Stars(props: any) {
 }
 
 const StarsCanvas = () => {
-  const starmode = useSelector(StarMode_data);
+  const { state } = useAppContext();
+  const starmode = state.StarMode;
   return (
     <div
       className={`w-full h-auto ${

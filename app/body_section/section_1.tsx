@@ -1,15 +1,10 @@
 "use client";
 import React from "react";
-import {
-  Image_src_data,
-  MobileMenu_data,
-} from "../../redux_store/redux_action";
-import { useSelector, useDispatch } from "react-redux";
 import Scale_Image from "./scale_img/scale_image";
 import { useEffect } from "react";
-import { setStarMode, setStarColur } from "../../redux_store/redux_action";
 import MobileMenu from "./mobile_menu/mobile_menu";
 import Section_2 from "./section_2";
+import { useAppContext } from "../context/AppContext";
 
 interface Props {
   data: string;
@@ -17,9 +12,9 @@ interface Props {
 }
 
 function Section_1() {
-  const dispatch = useDispatch();
-  const Mobilemenu: boolean = useSelector(MobileMenu_data);
-  const ImageSrc: Props = useSelector(Image_src_data);
+  const { state, dispatch } = useAppContext();
+  const Mobilemenu: boolean = state.MobileMenu;
+  const ImageSrc: Props = state.Image_src;
 
   useEffect(() => {
     const havestarMode = localStorage.getItem("starMode");
@@ -35,8 +30,8 @@ function Section_1() {
       localStorage.setItem("starMode", "active");
       localStorage.setItem("colour", "#4d7c0f");
     } else {
-      dispatch(setStarMode(havestarMode));
-      dispatch(setStarColur(colour));
+      dispatch({ type: "SET_STAR_MODE", payload: havestarMode });
+      dispatch({ type: "SET_STAR_COLUR", payload: colour });
     }
   }, []);
 

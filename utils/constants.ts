@@ -1,10 +1,10 @@
 export const Project: Project_data[] = [
   {
-    title: "Morden Next js 13 Profiol",
+    title: "Modern Next.js 13 Portfolio",
     video_key: "HvkrAjHJ-38",
-    say_xi: "Xi Have a Gread Day ☘️ ",
+    say_xi: "Have a great day!",
     say_xi_blog:
-      "This is My Profiol Project For Showcase , basic Ui interface and Contain Basic Animation & Authentication  ",
+      "My portfolio project built with Next.js 13 — featuring a clean UI, basic animations, and authentication.",
     technology_feature: [
       "Tailwind",
       "React",
@@ -38,13 +38,14 @@ export const Project: Project_data[] = [
       "Contain StarMode , Authentication Google , Facebook , Github , Instgram , Custom Star Colour Basic Animation With Fraimer Motion",
     Type: "Next js 13",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "Shoe Ecommerce & AdminDashboard ",
+    title: "Shoe E-Commerce & Admin Dashboard",
     video_key: "v3LJMcWbcDQ",
-    say_xi: "Hello my friends 👟",
+    say_xi: "Hello, my friends!",
     say_xi_blog:
-      "Xi That is My  Fullstack Responsive Shoes Project I get A lot of SKill Form This Project Complex Ui , authentication , CRUD 💚💚 ",
+      "A full-stack responsive shoe e-commerce and admin dashboard. I gained extensive experience with complex UI, authentication, and CRUD operations.",
     technology_feature: [
       "Tailwind",
       "React",
@@ -99,13 +100,14 @@ export const Project: Project_data[] = [
       "A Real Time Full Stack Shoe Ecommerce & Admin Dashboard application User Can Order and Contain Real World Payment For Stripe",
     Type: "Next js 13",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "AdminDashboard Web app",
+    title: "Admin Dashboard Web App",
     video_key: "yF1oJ7wzvWY",
-    say_xi: "Xi Form Responsive Food Project🤤",
+    say_xi: "Responsive food ordering project",
     say_xi_blog:
-      "Food Shopping Project With Graphql server User Authentication  , Create , Read ,  Update , Delete And Google login , Github , Instgram , Facebook , JWT Auth  ",
+      "Food ordering project with a GraphQL server, user authentication, CRUD operations, and social login integration.",
     technology_feature: [
       "Tailwind",
       "React",
@@ -161,13 +163,14 @@ export const Project: Project_data[] = [
       "A Real Time Full Stack FoodOrder & Admin Dashboard application User Can Order and Contain Payment For Stripe And AdminDashBoard Feature Admin can make Product CRUD and",
     Type: "Next js 13",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
     title: "Deliveroo Mobile App",
     video_key: "AxQ_Eli8gtk",
-    say_xi: "Xi from my first mobile app 📱",
+    say_xi: "My first mobile app",
     say_xi_blog:
-      "ReactNative First Project With Expo CLI Conatain Google AUthentication Contain Basic RestApi and Google Maps functionality ",
+      "A React Native project built with Expo CLI, featuring Google authentication, REST API integration, and Google Maps functionality.",
     technology_feature: [
       "Tailwind",
       "React Native",
@@ -220,13 +223,14 @@ export const Project: Project_data[] = [
       "/projects-images/deliveroo-5.jpg",
     ],
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "FullStackFood Order Website",
+    title: "Full-Stack Food Ordering Website",
     video_key: "yF1oJ7wzvWY",
-    say_xi: "Xi Form Responsive Food Project🤤",
+    say_xi: "Responsive food ordering project",
     say_xi_blog:
-      "Food Shopping Project With Graphql server User Authentication  , Create , Read ,  Update , Delete And Google login , Github , Instgram , Facebook , JWT Auth  ",
+      "Food ordering project with a GraphQL server, user authentication, CRUD operations, and social login integration.",
     technology_feature: [
       "Tailwind",
       "React",
@@ -282,14 +286,15 @@ export const Project: Project_data[] = [
       "A Real Time Full Stack FoodOrder & Admin Dashboard application User Can Order and Contain Payment For Stripe And AdminDashBoard Feature Admin can make Product CRUD and",
     Type: "Next js 13",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
 
   {
-    title: "Fullstack AI ChatGPT ( Clone ) ",
+    title: "Full-Stack AI ChatGPT Clone",
     video_key: "R90bxY4UwPg",
-    say_xi: "Xello My Frends 💚",
+    say_xi: "Hello, my friends!",
     say_xi_blog:
-      "This is my First AI Project data Coming From Opend AI , You can asked like RealTime Chat GPT   ",
+      "My first AI project — data comes from the OpenAI API. Ask questions just like in the real ChatGPT.",
     technology_feature: [
       "html",
       "css",
@@ -329,13 +334,14 @@ export const Project: Project_data[] = [
       "A Real Time You Can Ask any thing & you can create new chat delete chat & Clear conversations Feature and google , microsoft Auth",
     Type: "Next js 13",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "Nike AdminDashboard Web App ",
+    title: "Nike Admin Dashboard Web App",
     video_key: "v3LJMcWbcDQ",
-    say_xi: "Hello my friends 👟",
+    say_xi: "Hello, my friends!",
     say_xi_blog:
-      "Xi That is My  Fullstack Responsive Shoes Project I get A lot of SKill Form This Project Complex Ui , authentication , CRUD 💚💚 ",
+      "A full-stack responsive shoe e-commerce and admin dashboard. I gained extensive experience with complex UI, authentication, and CRUD operations.",
     technology_feature: [
       "Tailwind",
       "React",
@@ -390,13 +396,14 @@ export const Project: Project_data[] = [
       "A Real Time Full Stack Shoe Ecommerce & Admin Dashboard application User Can Order and Contain Real World Payment For Stripe",
     Type: "Next js 13",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "Morden 3 js Profiol",
+    title: "Modern Three.js Portfolio",
     video_key: "6wzf2ho-kzI",
-    say_xi: "Hello my friend! 👋🏼",
+    say_xi: "Hello, my friend!",
     say_xi_blog:
-      "This is a Normal 3 js Responsive Profiol Website Constain Starts Mode , Background Music , Day and Light Mode , Contain youtube emb video like youtube Mobile Responsive desing Base on Vite ",
+      "A responsive 3.js portfolio website with star mode, background music, light/dark mode, embedded YouTube videos, and a mobile-responsive layout built with Vite.",
     technology_feature: [
       "html",
       "css",
@@ -440,12 +447,13 @@ export const Project: Project_data[] = [
       "Morden Profiol Wbsite With Javascript | React | Tailwind css | Responsive Website profiol desing.",
     Type: "React",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "ApexLegnds.com ( Clone )",
+    title: "ApexLegends.com Clone",
     video_key: "IqYbA6ZZ-e4",
-    say_xi: "Hi have a good day! ☘️",
-    say_xi_blog: "That is My  favourite game Website so i can make Clone one",
+    say_xi: "Have a great day!",
+    say_xi_blog: "A clone of my favorite game website, Apex Legends — rebuilt from scratch.",
     technology_feature: [
       "html",
       "css",
@@ -480,13 +488,14 @@ export const Project: Project_data[] = [
       "Simple ApexLegnds Game Web application DropDown Feature Complex Responsive",
     Type: "Next js 13",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "Full Stack SocalMedia ",
+    title: "Full-Stack Social Media App",
     video_key: "cLKsNVSyPMM",
-    say_xi: "Hello my Friends 🎉",
+    say_xi: "Hello, my friends!",
     say_xi_blog:
-      "Fullstack Social Media Project With  React , Tailwind css and My First Node js express Server ☘️ ",
+      "A full-stack social media project built with React, Tailwind CSS, and my first Node.js Express server.",
     technology_feature: [
       "html",
       "css",
@@ -500,7 +509,7 @@ export const Project: Project_data[] = [
     about_this_app:
       "A Real Time Full Stack SocalMedia application User Can Upload Post With Image , User Can Make Post CRUD Operations & Reaction Feature , Comment CRUD & Contain User Profile CRUD and Friends Add , Remove RealTime Messanger Can send Image,Link,Text & RealTime With Pusher ",
     design_blog:
-      "Basic Desing From Youtube and I Modified That Desing All Code By Me an My Own Desing ",
+      "Basic Desing From Youtube and I Modified That Desing All Code By me an My Own Desing ",
     dependencies_blog:
       "You can use Yarn or NPM to install the dependencies. In this case I am use Npm",
     package: [
@@ -532,9 +541,10 @@ export const Project: Project_data[] = [
       "A Real Time Full Stack SocalMedia application User Can Upload Post With Image , User Can Make Post CRUD Operations & Reaction Feature , Comment CRUD & Contain User Profile CRUD and Friends Add , Remove RealTime Messanger Can send Image,Link,Text",
     Type: "React",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "ShoeEcommerce Server",
+    title: "Shoe E-Commerce Server",
     video_key: "",
     say_xi: "",
     say_xi_blog: "",
@@ -561,9 +571,10 @@ export const Project: Project_data[] = [
       " User authentication Google auth , Facebook auth , Nike Auth ..more , Mind leven CRUD functionality",
     Type: "server",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
-    title: "FoodOrder & AdminDashboard",
+    title: "Food Order & Admin Dashboard Server",
     video_key: "",
     say_xi: "",
     say_xi_blog: "",
@@ -591,6 +602,7 @@ export const Project: Project_data[] = [
       "User authentication , Graphql  Mind leven CRUD functionality , Google auth , Facebook auth , Fastfood Auth,",
     Type: "server",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
   {
     title: "Deliveroo Server",
@@ -620,6 +632,7 @@ export const Project: Project_data[] = [
       "Node js Express With Postger Sql ,FireBase FireStore  CRUD functionality",
     Type: "server",
     indevelopment: false,
+    dateAgo: "3 years ago",
   },
 ];
 
@@ -643,5 +656,6 @@ export const Project: Project_data[] = [
     project_blog: "",
     Type: "Next js 13",
     indevelopment: false,
+    dateAgo: "",
   },
 */

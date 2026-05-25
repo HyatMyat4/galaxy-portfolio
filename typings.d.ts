@@ -20,5 +20,6 @@ interface Project_data {
   Type: string;
   project_Img_Mobile?: string[];
   indevelopment: boolean;
+  dateAgo: string;
 }
 

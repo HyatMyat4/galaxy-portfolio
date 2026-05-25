@@ -1,7 +1,6 @@
 import React from "react";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-import { set_Image_src } from "../../../redux_store/redux_action";
-import { useDispatch } from "react-redux";
+import { useAppContext } from "../../context/AppContext";
 import Image from "next/image";
 interface Props {
   src_data: {
@@ -11,11 +10,11 @@ interface Props {
 }
 
 function Scale_Image({ src_data }: Props) {
-  const dispatch = useDispatch();
+  const { dispatch } = useAppContext();
   return (
     <div className="w-full h-full bg-black/80   backdrop-blur-sm fixed z-[999] inset-0 flex flex-col items-center  justify-start  ">
       <div
-        onClick={() => dispatch(set_Image_src(""))}
+        onClick={() => dispatch({ type: "SET_IMAGE_SRC", payload: { data: "", isMobile: false } })}
         className=" absolute  top-[20px] left-[20px]"
       >
         <div className="flex flex-row items-center justify-start text-slate-200 hover:text-sky-500 cursor-pointer ">

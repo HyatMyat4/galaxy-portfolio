@@ -2,8 +2,7 @@
 import React, { useState } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import { setMobileMenu } from "../../../redux_store/redux_action";
-import { useDispatch } from "react-redux";
+import { useAppContext } from "../../context/AppContext";
 import MoreMobile from "./more_mobile";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +10,7 @@ import Image from "next/image";
 function MobileMenu() {
   const [course, setcourse] = useState<boolean>(false);
   const [More, setMore] = useState<boolean>(false);
-  const dispatch = useDispatch();
+  const { dispatch } = useAppContext();
 
   return (
     <div
@@ -22,7 +21,7 @@ function MobileMenu() {
     >
       <div className="w-full min-h-[60px] flex flex-row items-center  justify-between">
         <div
-          onClick={() => dispatch(setMobileMenu(false))}
+          onClick={() => dispatch({ type: "SET_MOBILE_MENU", payload: false })}
           className=" flex flex-row items-center justify-start text-slate-200 hover:text-sky-500 cursor-pointer "
         >
           <ArrowLeftIcon className="h-6 w-6  mr-[5px] " />
