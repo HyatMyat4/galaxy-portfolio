@@ -37,6 +37,17 @@ const TAGS: TagDef[] = [
   { key: "Docker", label: "Docker", bg: "#2496ED", text: "text-[#fdfdfd]" },
   { key: "Stripe", label: "Stripe", bg: "#665BFF", text: "text-[#fdfdfd]" },
   { key: "Expo", label: "Expo", bg: "#422EDF", text: "text-[#fdfdfd]" },
+  { key: "NestJS", label: "NestJS", bg: "#E0234E", text: "text-[#fdfdfd]" },
+  { key: "Socket.io", label: "Socket.io", bg: "#111111", text: "text-[#fdfdfd]" },
+  { key: "Redis", label: "Redis", bg: "#DC382D", text: "text-[#fdfdfd]" },
+  { key: "BullMQ", label: "BullMQ", bg: "#6C1D3F", text: "text-[#fdfdfd]" },
+  { key: "OpenAI", label: "OpenAI", bg: "#10A37F", text: "text-[#fdfdfd]" },
+  { key: "Turborepo", label: "Turborepo", bg: "#EF4444", text: "text-[#fdfdfd]" },
+  { key: "Cloudflare", label: "Cloudflare", bg: "#F38020", text: "text-[#fdfdfd]" },
+  { key: "Omise", label: "Omise", bg: "#1A56DB", text: "text-[#fdfdfd]" },
+  { key: "Polar", label: "Polar", bg: "#1E3A5F", text: "text-[#A5B4FC]" },
+  { key: "Sentry", label: "Sentry", bg: "#362D59", text: "text-[#fdfdfd]" },
+  { key: "EAS", label: "EAS Build", bg: "#4630EB", text: "text-[#fdfdfd]" },
 ];
 
 function Technology_tag({ data }: Props) {

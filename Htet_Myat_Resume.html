@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Htet Myat — Senior Full-Stack Software Engineer</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 18mm;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 9.4pt;
+      line-height: 1.48;
+      color: #222;
+      background: #fff;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 40px;
+    }
+
+    /* ── HEADER ── */
+    .header { margin-bottom: 16px; }
+
+    .header h1 {
+      font-size: 28pt;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      color: #0c1b30;
+      line-height: 1.1;
+    }
+
+    .header .subtitle {
+      font-size: 10.5pt;
+      font-weight: 500;
+      color: #3a5f80;
+      margin: 3px 0 9px;
+      letter-spacing: 0.1px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 8.4pt;
+      color: #555;
+    }
+
+    .contact-row a { color: #1a6a9a; text-decoration: none; }
+
+    /* ── SECTION ── */
+    .section { margin-top: 14px; }
+
+    .section-title {
+      font-size: 7.5pt;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: #0c1b30;
+      border-bottom: 1.5px solid #0c1b30;
+      padding-bottom: 2px;
+      margin-bottom: 9px;
+    }
+
+    /* ── ABOUT ME ── */
+    .about-text {
+      font-size: 9.4pt;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* ── EXPERIENCE ── */
+    .exp-block { margin-bottom: 2px; }
+
+    .exp-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .exp-company {
+      font-size: 11pt;
+      font-weight: 800;
+      color: #0c1b30;
+    }
+
+    .exp-period {
+      font-size: 8.4pt;
+      color: #777;
+      font-style: italic;
+    }
+
+    .exp-role {
+      font-size: 9.2pt;
+      font-weight: 600;
+      color: #2a5080;
+      margin-bottom: 6px;
+    }
+
+    .bullets { list-style: none; padding: 0; }
+
+    .bullets li {
+      position: relative;
+      padding-left: 14px;
+      margin-bottom: 3.5px;
+      font-size: 9pt;
+      color: #333;
+      line-height: 1.45;
+    }
+
+    .bullets li::before {
+      content: '\25B8';
+      position: absolute;
+      left: 0;
+      color: #2a5080;
+      font-size: 7.5pt;
+      top: 1px;
+    }
+
+    .bullets li strong { color: #0c1b30; }
+
+    /* ── SKILLS ── */
+    .skills-table {
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 5px 10px;
+      font-size: 9pt;
+    }
+
+    .sk-label {
+      font-weight: 700;
+      color: #0c1b30;
+      padding-top: 1px;
+    }
+
+    .sk-value { color: #333; }
+
+    /* ── PROJECTS ── */
+    .proj { margin-bottom: 9px; }
+
+    .proj-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .proj-name {
+      font-weight: 700;
+      font-size: 9.5pt;
+      color: #0c1b30;
+    }
+
+    .proj-url {
+      font-size: 8pt;
+      color: #1a6a9a;
+      white-space: nowrap;
+    }
+
+    .proj-url a {
+      color: #1a6a9a;
+      text-decoration: none;
+    }
+
+    .proj-url a:hover { text-decoration: underline; }
+
+    .store-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+
+    .store-link {
+      font-size: 7.8pt;
+      color: #fff;
+      background: #1a3a5c;
+      border-radius: 4px;
+      padding: 2px 8px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    .store-link:hover { background: #1a6a9a; }
+
+    .proj-desc {
+      font-size: 8.8pt;
+      color: #333;
+      margin-top: 2px;
+    }
+
+    .proj-tech {
+      font-size: 8.2pt;
+      color: #666;
+      margin-top: 2px;
+      font-style: italic;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree { font-weight: 700; font-size: 9.5pt; color: #0c1b30; }
+    .edu-date   { font-size: 8.4pt; color: #777; font-style: italic; }
+    .edu-inst   { font-size: 8.8pt; color: #444; margin-top: 1px; }
+
+    /* ── LANGUAGES ── */
+    .lang-row {
+      display: flex;
+      gap: 28px;
+      font-size: 9pt;
+      flex-wrap: wrap;
+    }
+
+    .lang-row strong { color: #0c1b30; }
+
+    /* ── ADDITIONAL ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 20px;
+    }
+
+    .dot-item {
+      position: relative;
+      padding-left: 11px;
+      font-size: 9pt;
+      color: #333;
+    }
+
+    .dot-item::before {
+      content: '\00B7';
+      position: absolute;
+      left: 1px;
+      font-size: 14pt;
+      line-height: 1;
+      color: #2a5080;
+      top: -1px;
+    }
+
+    .salary-note {
+      margin-top: 9px;
+      font-size: 9pt;
+      color: #444;
+      border-top: 1px solid #ddd;
+      padding-top: 7px;
+    }
+
+    .salary-note strong { color: #0c1b30; }
+
+    /* ── PROJECT TAG ── */
+    .proj-tag {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #2a5080;
+      border-radius: 3px;
+      padding: 1px 5px;
+      margin-left: 6px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+    }
+
+    .proj-subhead {
+      font-size: 7.8pt;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #2a5080;
+      margin: 10px 0 6px;
+    }
+
+    @media print {
+      body { padding: 0; max-width: none; }
+      .section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <div class="header">
+    <h1>Htet Myat</h1>
+    <div class="subtitle">Senior Full-Stack Software Engineer &nbsp;·&nbsp; 4+ Years Startup Experience</div>
+    <div class="contact-row">
+      <span>hyatmyat79@gmail.com</span>
+      <span>+95 969 075 3714</span>
+      <a href="https://linkedin.com/in/htet-myat-14089322a">linkedin.com/in/htet-myat-14089322a</a>
+      <span>Age: 23</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ME ── -->
+  <div class="section">
+    <div class="section-title">About Me</div>
+    <p class="about-text">
+      Senior Full-Stack Software Engineer with 4+ years of experience building and shipping production web, mobile, and backend systems in fast-paced startup environments. Covers the complete product lifecycle — system design, API development, mobile app releases on the App Store and Google Play, cloud deployment, and ongoing production support. Comfortable taking full ownership of features end-to-end, adapting to new technologies quickly, and resolving critical production issues at any hour. Recognised by previous employer for strong work ethic, reliability, and commitment to quality.
+    </p>
+  </div>
+
+  <!-- ── EXPERIENCE ── -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    <div class="exp-block">
+      <div class="exp-top">
+        <span class="exp-company">Innorder</span>
+        <span class="exp-period">2022 – Present</span>
+      </div>
+      <div class="exp-role">Senior Full-Stack Software Engineer</div>
+      <ul class="bullets">
+        <li>Designed and developed <strong>innorder</strong> (app.innorder.com) — a full-stack, multi-tenant restaurant management SaaS using Next.js, NestJS, PostgreSQL, Redis, and Socket.io, with real-time order management, AI features (OpenAI), analytics dashboards, and role-based access control</li>
+        <li>Built and published the <strong>innorder Staff App</strong> (React Native / Expo) to both the <strong>Apple App Store and Google Play Store</strong>; features include real-time push notifications, offline SQLite storage, live order updates via WebSockets, and multi-language support</li>
+        <li>Developed <strong>booking.innorder.com</strong> — an online table booking and reservation platform integrating <strong>Omise payment gateway</strong>, LINE Bot messaging, BullMQ job queues, QR code check-in, and WebSocket-based real-time availability</li>
+        <li>Engineered <strong>Emojimeter</strong> (app.emojimeter.com) — a SaaS customer feedback platform with <strong>Polar subscription billing</strong>, Cloudflare R2 storage, Google Cloud Translate multi-language support, and Sentry production monitoring</li>
+        <li>Built <strong>Crayon Post</strong> (app.crayonpost.com) — a school communication platform as a Turborepo monorepo with a Next.js web app and a React Native/Expo mobile app deployed to both app stores; integrated Google Cloud Translate and Cloudflare R2</li>
+        <li>Architected NestJS backend services: REST APIs, WebSockets, scheduled background jobs, rate limiting, push notifications, and real-time event handling</li>
+        <li>Integrated payment gateways across multiple products: <strong>Stripe, Polar,</strong> and <strong>Omise</strong></li>
+        <li>Deployed and managed production infrastructure on <strong>DigitalOcean, Render, Hetzner, Cloudflare, Google Cloud App Engine</strong>, and <strong>AWS S3</strong>; configured Docker containers and Linux server environments</li>
+        <li>Built and maintained CI/CD pipelines with <strong>GitHub Actions</strong> and Docker; managed staging and production deployment workflows</li>
+        <li>Monitored production health using <strong>Grafana, Prometheus</strong>, and <strong>Sentry</strong>; led incident response and root-cause resolution</li>
+        <li>Owned the complete <strong>mobile app build &amp; release pipeline</strong> — configured EAS Build profiles (development / staging / production), managed signing certificates and provisioning profiles, submitted builds via App Store Connect and Google Play Console, handled review responses, and managed versioning and release notes</li>
+        <li>Implemented <strong>OTA updates</strong> (Expo Updates) to push JavaScript bundle changes to production apps instantly, without App Store or Play Store review cycles</li>
+        <li>Built <strong>in-app real-time chat</strong> with Socket.io, deep linking, background timers, and high-priority push notification channels for critical order and message alerts</li>
+        <li>Held senior responsibility — drove architecture decisions, established code standards, and supported team growth through code review and mentoring</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── TECHNICAL SKILLS ── -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-table">
+      <span class="sk-label">Frontend</span>
+      <span class="sk-value">React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Material UI, Radix UI</span>
+
+      <span class="sk-label">Backend</span>
+      <span class="sk-value">Node.js, NestJS, REST APIs, WebSockets, Socket.io, JWT Authentication, BullMQ, Redis, Cron Jobs, Webhooks, System Design</span>
+
+      <span class="sk-label">Mobile</span>
+      <span class="sk-value">React Native, Expo &mdash; iOS &amp; Android; EAS Build, App Store Connect &amp; Google Play Console submission, OTA updates (Expo Updates), push notifications, in-app real-time chat, deep linking</span>
+
+      <span class="sk-label">Desktop</span>
+      <span class="sk-value">Tauri (cross-platform desktop app development)</span>
+
+      <span class="sk-label">Database</span>
+      <span class="sk-value">PostgreSQL, Prisma ORM, SQL, SQLite, Database Optimization</span>
+
+      <span class="sk-label">Cloud &amp; Hosting</span>
+      <span class="sk-value">DigitalOcean, Cloudflare, Render, Hetzner &nbsp;&middot;&nbsp; AWS (Basic): EC2, Load Balancer, Lambda, S3, Security Groups &nbsp;&middot;&nbsp; GCP (Basic): App Engine, Cloud Run (Serverless), Cloud Translate</span>
+
+      <span class="sk-label">DevOps</span>
+      <span class="sk-value">Docker, Linux, GitHub Actions, CI/CD</span>
+
+      <span class="sk-label">Payments</span>
+      <span class="sk-value">Stripe, Polar, Omise</span>
+
+      <span class="sk-label">Tools</span>
+      <span class="sk-value">Git, Redis, Grafana, Prometheus, Sentry, Bash</span>
+    </div>
+  </div>
+
+  <!-- ── NOTABLE PROJECTS ── -->
+  <div class="section">
+    <div class="section-title">Notable Projects</div>
+
+    <div class="proj-subhead">Web Platforms</div>
+
+    <div class="proj">
+      <div class="proj-top">
+        <span class="proj-name">innorder &mdash; Restaurant Management SaaS</span>
+        <span class="proj-url">
+          <a href="https://innorder.com/en/" target="_blank">innorder.com/en</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://app.innorder.com/" target="_blank">app.innorder.com</a>
+        </span>
+      </div>
+      <div class="proj-desc">Full-stack multi-tenant hospitality SaaS with real-time order management, staff mobile app (iOS &amp; Android), AI-powered features, analytics dashboard, and a public marketing landing page.</div>
+      <div class="proj-tech">Next.js &middot; NestJS &middot; PostgreSQL &middot; Redis &middot; Socket.io &middot; React Native/Expo &middot; OpenAI &middot; AWS S3 &middot; Docker &middot; DigitalOcean</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-top">
+        <span class="proj-name">Booking Platform &mdash; Online Reservation System</span>
+        <span class="proj-url"><a href="https://booking.innorder.com/" target="_blank">booking.innorder.com</a></span>
+      </div>
+      <div class="proj-desc">Table and service reservation platform with payment processing, real-time availability, QR code check-in, and LINE Bot notifications.</div>
+      <div class="proj-tech">Next.js &middot; PostgreSQL &middot; Omise Payment &middot; LINE Bot SDK &middot; BullMQ &middot; WebSockets &middot; AWS S3</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-top">
+        <span class="proj-name">Emojimeter &mdash; Customer Feedback SaaS</span>
+        <span class="proj-url"><a href="https://app.emojimeter.com/" target="_blank">app.emojimeter.com</a></span>
+      </div>
+      <div class="proj-desc">Multi-tenant feedback and survey SaaS with subscription billing, multi-language surveys, real-time analytics, and white-label support.</div>
+      <div class="proj-tech">Next.js &middot; PostgreSQL &middot; Polar Payments &middot; Cloudflare R2 &middot; Google Cloud Translate &middot; Sentry &middot; Material UI</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-top">
+        <span class="proj-name">Crayon Post &mdash; School Communication Platform</span>
+        <span class="proj-url">
+          <a href="https://app.crayonpost.com/" target="_blank">app.crayonpost.com</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://hampton.crayonpost.com/" target="_blank">hampton.crayonpost.com</a>
+        </span>
+      </div>
+      <div class="proj-desc">Turborepo monorepo school communication platform with a Next.js web dashboard and native mobile apps (iOS &amp; Android) for teachers, students, and parents.</div>
+      <div class="proj-tech">Turborepo &middot; Next.js &middot; React Native/Expo &middot; PostgreSQL &middot; Cloudflare R2 &middot; Google Cloud Translate</div>
+    </div>
+
+    <div class="proj-subhead">Mobile Applications</div>
+
+    <div class="proj">
+      <div class="proj-top">
+        <span class="proj-name">innorder Staff App <span class="proj-tag">iOS &amp; Android</span></span>
+        <span class="proj-url">com.innorder.staffapp</span>
+      </div>
+      <div class="proj-desc">Cross-platform staff management app for the innorder platform. Features real-time order notifications, live chat via WebSockets, push notifications, offline SQLite storage, multi-language UI, and dark/light theme. Published to Apple App Store and Google Play Store (v2.1.2).</div>
+      <div class="proj-tech">React Native &middot; Expo 54 &middot; Expo Router &middot; Redux Toolkit &middot; Socket.io &middot; SQLite &middot; Expo Push Notifications &middot; TypeScript</div>
+      <div class="store-links">
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.innorder.innorderstaffapp" target="_blank">&#9654; Google Play</a>
+        <a class="store-link" href="https://apps.apple.com/search?term=innorder+staff" target="_blank">&#9654; App Store</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-top">
+        <span class="proj-name">Crayon Post Mobile App <span class="proj-tag">iOS &amp; Android</span></span>
+        <span class="proj-url">com.crayonpost.app</span>
+      </div>
+      <div class="proj-desc">React Native mobile companion to the Crayon Post school platform. Provides teachers and parents with communication, announcements, and media sharing. Published to both App Store and Google Play Store as part of the Turborepo monorepo, with OTA update support.</div>
+      <div class="proj-tech">React Native &middot; Expo 54 &middot; EAS Build &middot; Expo Updates (OTA) &middot; TypeScript &middot; i18n &middot; Cloudflare R2 &middot; Google Cloud Translate</div>
+      <div class="store-links">
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.crayonpost.app" target="_blank">&#9654; Google Play</a>
+        <a class="store-link" href="https://apps.apple.com/search?term=crayon+post" target="_blank">&#9654; App Store</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-top">
+        <span class="proj-name">Maple Bear Thailand &mdash; School App <span class="proj-tag">iOS &amp; Android</span></span>
+        <span class="proj-url">com.maplebear.mobile</span>
+      </div>
+      <div class="proj-desc">Mobile app for Maple Bear Thailand, a Canadian bilingual education franchise. Enables school-to-parent communication, announcements, chat, and student activity updates. Published to the Apple App Store and Google Play Store with OTA update delivery.</div>
+      <div class="proj-tech">React Native &middot; Expo &middot; EAS Build &middot; Expo Updates (OTA) &middot; Push Notifications &middot; TypeScript</div>
+      <div class="store-links">
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.maplebear.mobile" target="_blank">&#9654; Google Play</a>
+        <a class="store-link" href="https://apps.apple.com/us/app/maple-bear-thailand/id6756017469" target="_blank">&#9654; App Store</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── EDUCATION ── -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-row">
+      <span class="edu-degree">GED Credential</span>
+      <span class="edu-date">October 2024</span>
+    </div>
+    <div class="edu-inst">Office of the State Superintendent of Education, Washington D.C. &mdash; Equivalent to U.S. High School Diploma</div>
+  </div>
+
+  <!-- ── LANGUAGES ── -->
+  <div class="section">
+    <div class="section-title">Languages</div>
+    <div class="lang-row">
+      <span><strong>Burmese</strong> &mdash; Native</span>
+      <span><strong>English</strong> &mdash; Written &amp; Listening: Proficient &nbsp;|&nbsp; Speaking: Basic (actively improving)</span>
+    </div>
+  </div>
+
+  <!-- ── ADDITIONAL INFORMATION ── -->
+  <div class="section">
+    <div class="section-title">Additional Information</div>
+    <div class="two-col">
+      <div class="dot-item">Strong experience in agile startup environments</div>
+      <div class="dot-item">Comfortable owning both frontend and backend responsibilities</div>
+      <div class="dot-item">Interested in software architecture, DevOps, and cloud infrastructure</div>
+      <div class="dot-item">Adapts quickly to new technologies required for company growth</div>
+      <div class="dot-item">Available to address production incidents outside office hours</div>
+      <div class="dot-item">Highly regarded by previous employer for work ethic and dedication</div>
+      <div class="dot-item">Startup-minded: handles pressure, ambiguity, and fast iteration well</div>
+      <div class="dot-item">Actively developing communication and technical leadership skills</div>
+    </div>
+    <div class="salary-note">
+      <strong>Expected Salary:</strong> 13 (minimum) &nbsp;&middot;&nbsp; Open to negotiation for the initial period
+    </div>
+  </div>
+
+</body>
+</html>

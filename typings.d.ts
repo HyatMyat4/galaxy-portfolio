@@ -19,5 +19,12 @@ interface Project_data {
   project_Img_Mobile?: string[];
   indevelopment: boolean;
   dateAgo: string;
+  category?: "practice" | "realworld";
+  live_url?: string;
+  preview_video?: string;
+  project_imgs?: string[];
+  live_url_2?: string;
+  playstore_url?: string;
+  appstore_url?: string;
 }
 
